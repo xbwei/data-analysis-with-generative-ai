@@ -1,2 +1,4 @@
 # data-analysis-with-generative-ai
-Tutorials of learning generative ai in data analysis 
+Tutorials on learning generative AI in data analysis 
+
+Many contents are inspired by the courses on [DeepLearning.AI](https://www.deeplearning.ai/)
