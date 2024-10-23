@@ -1,3 +1,6 @@
+#ignore pdf files
+*.pdf
+
 #ignore the tweet data
 tweet_collection.txt
 
