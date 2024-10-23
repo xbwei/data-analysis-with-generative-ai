@@ -6,5 +6,5 @@ Tutorials on learning generative AI in data analysis
 2. [Collect Job Data with Generative AI](https://github.com/xbwei/data-analysis-with-generative-ai/blob/main/Collect-Job-Data-with-Generative-AI.ipynb)
      * [Tutorial](https://www.lbsocial.net/post/from-search-to-success-how-ai-transforms-job-hunting-and-recommendations)
 
-## Recommended resources:
+## Recommended resources
 - Courses on [DeepLearning.AI](https://www.deeplearning.ai/)
