@@ -7,7 +7,6 @@ Tutorials on learning generative AI in data analysis
      * [Tutorial](https://www.lbsocial.net/post/from-search-to-success-how-ai-transforms-job-hunting-and-recommendations)
 
 ## Recommended resources
-- OpenAI. n.d. “OpenAI Documents.” OpenAI. Accessed October 18, 2024. https://platform.openai.com.
-- DeepLearning.AI. n.d. “DeepLearning.AI: Start or Advance Your Career in AI.” Accessed October 29, 2024. https://www.deeplearning.ai/.
-
-
+- OpenAI. n.d. *“OpenAI Documents.”* OpenAI. Accessed October 18, 2024. https://platform.openai.com.
+- DeepLearning.AI. n.d. *“DeepLearning.AI: Start or Advance Your Career in AI.”* Accessed October 29, 2024. https://www.deeplearning.ai/.
+- MongoDB. *“What Is MongoDB? - MongoDB Manual.”* Accessed October 31, 2024. https://www.mongodb.com/docs/manual/.
