@@ -11,6 +11,8 @@ Tutorials on learning generative AI in data analysis
      * [Tutorial](https://www.lbsocial.net/post/ai-magic-for-twitter-images-transform-classify-and-create-with-diffusion-models)
 5. [Automating Grading with OpenAI Function Calling](https://github.com/xbwei/data-analysis-with-generative-ai/blob/main/Automating-Grading-with-OpenAI-Function-Calling.ipynb)
      * [Tutorial](https://www.lbsocial.net/post/openai-function-calling-automate-and-enhance-grading-with-llms)
+6. [OpenAI Assistant Crafting Email Responses](https://github.com/xbwei/data-analysis-with-generative-ai/blob/main/OpenAI-Assistant-Crafting-Email-Responses.ipynb)
+     * [Tutorial](https://www.lbsocial.net/post/openai-assistant-automating-email-replies-for-professors-and-students)
 
 ## Recommended resources
 - OpenAI. n.d. *“OpenAI Documents.”* OpenAI. Accessed October 18, 2024. https://platform.openai.com.
