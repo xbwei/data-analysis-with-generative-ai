@@ -1,4 +1,10 @@
-# Data Analysis with Generative AI
+⚠️ Repository Archived: No Longer Updated
+This repository is no longer actively maintained or updated. For the latest updates and continued development, please visit our new repository:
+
+https://github.com/lbsocial/data-analysis-with-generative-ai
+
+Thank you for your interest and support! If you have any questions, feel free to open an issue in the new repository.
+
 Tutorials on learning generative AI in data analysis 
 
 1. [Prompt Engineering: Use OpenAI to Analyze Twitter Data](https://github.com/xbwei/data-analysis-with-generative-ai/blob/main/Prompt-Engineering-Analyze-Twitter-Data.ipynb)
