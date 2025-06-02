@@ -25,7 +25,7 @@ It complements the textbook [_Social Data Analytics in the Cloud with AI_](https
 ## 📂 Repository Structure
 
 ```
-📁 LBSocial-Chat/                 # Chatbot with OpenAI Assistant API
+
 📄 Automating-Grading...         # Auto-grade MongoDB student queries
 📄 Collect-Job-Data...           # Search and store jobs with generative AI
 📄 Exploring-Twitter-Data...     # RAG pipeline with vector DB
