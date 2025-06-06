@@ -73,8 +73,8 @@ Here’s what’s included:
 ## 📘 Related Textbook
 
 **Social Data Analytics in the Cloud with AI**  
-Wei, Xuebin, and Xinyue Ye. CRC Press, 2024  
-🔗 Visit the companion site with demos and videos.
+[Wei, Xuebin, and Xinyue Ye. CRC Press, 2024](https://www.taylorfrancis.com/books/mono/10.1201/9781003437611/social-data-analytics-cloud-ai-xuebin-wei-xinyue-ye)
+
 
 ---
 
@@ -89,10 +89,3 @@ This repository is part of the research and development for the second edition o
 - Comparison of new reasoning models (`o1` vs `GPT`)
 
 ✨ **Star this repo** to stay updated on future releases!
-
----
-
-## 📬 Contact
-
-**Xuebin Wei, PhD**  
-📧 weixuebin@gmail.com  
