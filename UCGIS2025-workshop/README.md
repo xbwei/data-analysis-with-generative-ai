@@ -340,8 +340,6 @@ Examples:
 - **How many tweets' sentiment is Positive?**
 - **The top 10 most popular Twitter users**
 - **The top 10 extracted organizations**
-- **Tweets with fear or anger emotions**
-- **Tweets that mention both OpenAI and GPT-4**
 
 You are encouraged to try your own questions and explore how well the system understands them.
 
