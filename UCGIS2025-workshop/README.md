@@ -46,6 +46,7 @@ MongoDB is the most popular NoSQL database and offers a free M0 cluster in its A
 > While it is not the best practice, to simplify the workshop, let’s all use the same username and password:  
 > Username: `demo`  
 > Password: `UCGIS2025`
+
 ![screen](pic/image005.png)
 
 5. While the cluster is being created, change the network access settings:
