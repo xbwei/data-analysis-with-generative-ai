@@ -27,7 +27,7 @@ Twitter recently updated its policy to allow the free Twitter API to collect 100
 4. Log in to your Twitter developer account. Under **Projects & Apps**, you will find your default app.
 5. Click **Keys and tokens**, and generate a **Bearer Token**.
 6. Copy the Bearer Token and save it to your local computer, such as a text file.
-  ![screen](pic/image001.png)
+![screen](pic/image001.png)
 
 > If you can’t create a Twitter API, you can use the provided demo Tweet data.
 
@@ -40,25 +40,30 @@ MongoDB is the most popular NoSQL database and offers a free M0 cluster in its A
 1. You should have received an invitation from MongoDB. Please accept the invitation and register your account at https://www.mongodb.com.
 2. Once you log in, create a new project. You can name your project with your name. Each participant has complete control over their project.
 3. In your project, create a cluster — a group of database instances. You can create only one free cluster per project.
+![screen](pic/image003.png)
 4. On the next page, create a database user. This user is different from your MongoDB account and is used in Python to access your database.
 
 > While it is not the best practice, to simplify the workshop, let’s all use the same username and password:  
 > Username: `demo`  
 > Password: `UCGIS2025`
+![screen](pic/image005.png)
 
 5. While the cluster is being created, change the network access settings:
     - Under **Security**, click **Network Access**, then click **Edit**.
     - Best practice is to restrict access by IP address, but for the workshop, allow access from anywhere.
+![screen](pic/image007.png)
 
 6. Locate the MongoDB connection string:
     - Go to **Clusters** > **Connect**.
     - Choose **Drivers/Python**, copy the connection string, and save it locally.
+![screen](pic/image009.png)
 
 7. To easily manage and query the data, download and install **MongoDB Compass**:
     - Visit https://www.mongodb.com/try/download/compass.
     - Download the version for your operating system.
     - Start Compass, add a new connection, and paste in your connection string.
     - Make sure you change the password to `UCGIS2025`.
+![screen](pic/image012.png)
 
 8. You should now be able to see your cluster on the left side of the Compass interface.
 
