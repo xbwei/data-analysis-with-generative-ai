@@ -93,9 +93,9 @@ We will use **AWS Secrets Manager** to securely store credentials for use in the
 3. Choose **Other type of secret**, then enter the key-value pair for your Twitter API:
 
     - Key: `bearer_token`  
-      Value: your bearer token  
+    - Value: your bearer token  
 ![screen](pic/image017.png)
-      Secret name: `twitter_api`
+    - Secret name: `twitter_api`
 ![screen](pic/image019.png)
 
 4. Accept all other default settings and store the secret.
@@ -122,6 +122,7 @@ Repeat the above process for your MongoDB and OpenAI credentials:
 4. Under **Git repositories**, choose to clone a public Git repository.
 5. Use the following GitHub repository URL:  
    `https://github.com/xbwei/data-analysis-with-generative-ai.git`
+![screen](pic/image021.png)
 6. Leave all other settings at their default values and click **Create instance**.
 
 > It may take 1–2 minutes for the notebook instance to become ready. We can take a short break now. Feel free to ask the instructor if you have questions.
@@ -134,6 +135,7 @@ Once your Jupyter notebook instance is ready and running, you can begin collecti
 1. Open **JupyterLab** from your SageMaker instance.
 2. Navigate to the notebook file named `Collect_Twitter_Data.ipynb`.
 3. Open the notebook. Select the first cell, and press **Shift + Enter** to execute it.
+![screen](pic/image023.png)
 4. Continue executing all cells from top to bottom one by one.
 
 > The notebook is designed to use the Twitter API to collect up to **100 tweets**, which is the current limit for the free tier.
@@ -149,6 +151,7 @@ query = "generative AI"
 ```
 
 > You can change `"generative AI"` to any keyword or hashtag you want to collect tweets about.
+![screen](pic/image025.png)
 
 ### After Collection
 
@@ -168,9 +171,11 @@ If your Twitter API setup did not work or if you’ve already hit the 100 tweet/
 2. Click **Create Database**.
    - Name the database: `demo`
    - Name the collection: `tweet_collection`
+![screen](pic/image027.png)
 
 3. Once the collection is created, click **Import Data**.
 4. Select the demo tweet JSON file that you received from the instructor via email.
+![screen](pic/image029.png)
 5. After importing, you’ll be able to see the same kind of tweet data as if you had collected it via API.
 
 ---
@@ -186,9 +191,9 @@ In this section, you will use OpenAI's API to process and analyze the tweet text
 The analyses performed include:
 
 - **Sentiment Analysis**: Determine if the tweet is positive, negative, or neutral.
-- **Language Translation**: Translate tweets into English (if necessary).
-- **Emotion Detection**: Identify emotions like anger, joy, surprise, or fear.
-- **Entity Extraction**: Extract named entities such as people, organizations, and locations.
+- **Language Translation**: Translate tweets into Chinese.
+- **Emotion Detection**: Identify anger or not.
+- **Entity Extraction**: Extract named entities such as people and organizations.
 - **Summarization**: Generate a short summary for each tweet.
 
 Each result is saved back into MongoDB as additional fields within the tweet document.
@@ -208,6 +213,7 @@ This advanced notebook lets you extract, classify, and manipulate tweet images u
 
 1. Open the notebook titled `Twitter-Image-Classification-Recreation-Editing.ipynb`.
 2. From the kernel menu (top-right), select the `conda_pytorch` environment.
+![screen](pic/image030.png)
 3. Execute all the cells one by one.
 
 ### What This Notebook Does
@@ -216,22 +222,19 @@ This advanced notebook lets you extract, classify, and manipulate tweet images u
 - **Analyzes Image Content**: Sends each image to OpenAI’s vision model to get a textual description.
 - **Selects One Random Image**: Displays a single image along with its AI-generated description.
 - **Recreates Images from Prompts**: You provide a text prompt and the model generates new images based on the original content.
-- **Applies a Mask with PyTorch**: Optionally applies a mask to selectively regenerate parts of the image.
+
 
 ### Customizing Image Prompts
 
 In the final cell of the notebook, you will be prompted to type a new instruction for generating an image:
-
-```python
-prompt = "turn the image into a watercolor painting of a futuristic city"
-```
-
+![screen](pic/image033.png)
 > Edit this prompt to explore different transformations or styles.
 
 ### If the Mask Fails
 
 - Sometimes the notebook won’t be able to generate a mask for an image.
 - In that case, simply re-run the code cell that selects a random image. Try another one.
+![screen](pic/image031.png)
 
 ## Vector Database and RAG System
 
@@ -258,18 +261,14 @@ After running the embedding steps:
 1. Open **MongoDB Compass**.
 2. Refresh the collection where you stored your tweets.
 3. Each document (tweet) should now contain an additional field — usually named `"embedding"` — which holds the numerical vector representing the semantic content of the tweet.
-
+![screen](pic/image035.png)
 ---
 
 ### Using the RAG Chatbot
 
 Toward the end of the notebook, you’ll find cells that let you ask questions like:
 
-```python
-"Tell me about the most discussed AI topics in these tweets."
-"What do people say about deep learning?"
-"Are there any concerns mentioned about AI safety?"
-```
+![screen](pic/image036.png)
 
 The system works as follows:
 
@@ -303,7 +302,7 @@ Compass allows two types of queries:
 Example filter (find positive sentiment tweets):
 
 ```json
-{ "sentiment": "Positive" }
+{ "tweet.sentiment": "Positive" }
 ```
 
 ---
@@ -314,13 +313,15 @@ MongoDB Atlas Compass supports AI-powered querying in plain English.
 
 1. Click **Generate Query** in Compass.
 2. You will be asked to **log in with your Atlas account** if you're not already logged in.
+![screen](pic/image038.png)
 3. Once logged in, return to Compass and try typing a question in the prompt box.
+![screen](pic/image039.png)
 
 Examples:
 
-- `"Which tweets have the most likes?"`
-- `"Show me tweets with negative sentiment."`
-- `"How many tweets mention OpenAI?"`
+- `"How many tweets' sentiment is Positive"`
+- `"The top 10 popular Twitter users."`
+
 
 4. MongoDB will convert your question into either:
    - A document query
@@ -365,12 +366,14 @@ You are encouraged to try your own questions and explore how well the system und
 
 1. Click your dashboard and select **Add Chart**.
 2. Choose the **tweet_collection** from your **demo** database as the data source.
+![screen](pic/image041.png)
 
 #### Example 1: Count of Tweets
 
 - Select **Number** as the chart type.
 - Drag `tweet_id` to the **Number** field.
 - Use a **count aggregation function**.
+![screen](pic/image043.png)
 
 #### Example 2: Sentiment by Tweet
 
@@ -380,12 +383,14 @@ You are encouraged to try your own questions and explore how well the system und
   - **X-axis**: `tweet_id`
   - **Y-axis**: `sentiment`
   - **Series**: `anger` (or any emotion field)
+![screen](pic/image045.png)
 
 #### Example 3: Choropleth Map of Tweet Locations
 
 - Choose the **Map** chart type.
 - Drag `user.location` to the **Location** field.
 - Drag `tweet_id` to **Color**, set to **count**.
+![screen](pic/image047.png)
 
 ---
 
@@ -394,6 +399,7 @@ You are encouraged to try your own questions and explore how well the system und
 1. Click **Add Chart**.
 2. In the top-left, switch from **Classic Chart** to **Natural Language Chart**.
 3. Enter a plain-English question in the prompt box.
+![screen](pic/image049.png)
 
 Example prompts:
 
@@ -413,6 +419,7 @@ To make your dashboard interactive:
 2. Choose a field to filter by (e.g., `sentiment`).
 3. Enable filter controls on relevant charts.
 4. Now, when you click on a value like "Negative", all charts update to reflect only negative tweets.
+![screen](pic/image051.png)
 
 > This makes your dashboard dynamic and enables exploratory data analysis through user interaction.
 
@@ -431,7 +438,9 @@ Congratulations! You’ve now completed all core parts of the UCGIS 2025 worksho
   1. Close the **JupyterLab** tab.
   2. Go to your **SageMaker** instance in the AWS console.
   3. Stop the notebook instance to avoid using more lab time.
+![screen](pic/image053.png)
   4. Return to the AWS Learner Lab and click **End Lab** to finalize the session.
+![screen](pic/image055.png)
 
 > ✅ Your AWS Academy Lab will remain accessible until **October 31, 2025**.
 
