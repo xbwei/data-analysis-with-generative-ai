@@ -171,6 +171,7 @@ If your Twitter API setup did not work or if you’ve already hit the 100 tweet/
 2. Click **Create Database**.
    - Name the database: `demo`
    - Name the collection: `tweet_collection`
+
 ![screen](pic/image027.png)
 
 3. Once the collection is created, click **Import Data**.
