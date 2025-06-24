@@ -77,8 +77,11 @@ AWS Academy offers free credits for students to utilize AWS services, including 
 
 **Twitter API**  
 - Key: `bearer_token`  
-- Value: your bearer token  
+- Value: your bearer token
+<img src="pic/image017.png" width="100%" />
 - Secret name: `twitter_api`
+<img src="pic/image019.png" width="100%" />
+
 
 **MongoDB**  
 - Key: `connection_string`  
@@ -100,6 +103,7 @@ AWS Academy offers free credits for students to utilize AWS services, including 
 - Provide an instance name.
 - Under **Git repositories**, clone the public Git repository:  
   `https://github.com/xbwei/data-analysis-with-generative-ai.git`
+<img src="pic/image021.png" width="100%" />
 - Leave default settings and create the instance (ready in 1–2 minutes).
 - Click **Open Jupyter** when the instance is in service.
 
@@ -109,13 +113,17 @@ AWS Academy offers free credits for students to utilize AWS services, including 
 
 - Open **Collect_Twitter_Data** in JupyterLab.
 - Run each cell from top to bottom.
+  <img src="pic/image023.png" width="100%" />
 - You can change the keyword in the data collection cell (default: “generative AI”).
+  <img src="pic/image025.png" width="100%" />
 
 After data is collected, refresh MongoDB Compass to view the tweets.
 
 > Optional: If you can’t collect tweets:
 > - Create a database `demo` and collection `tweet_collection` in Compass.
+<img src="pic/image027.png" width="100%" />
 > - Click **Import Data** and upload the demo tweets file from your email.
+<img src="pic/image029.png" width="100%" />
 
 ---
 
