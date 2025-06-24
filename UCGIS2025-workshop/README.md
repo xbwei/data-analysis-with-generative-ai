@@ -81,7 +81,7 @@ AWS Academy offers free credits to students using AWS services including coding,
 5. For first-time users, you’ll need to accept the terms. Click **Start Lab** and wait until your lab environment is ready.
 
 > When the AWS dot becomes green, click the AWS link to open the AWS console.
-
+![screen](pic/image014.png)
 ---
 
 ### Store Credentials in AWS Secrets Manager
@@ -94,7 +94,9 @@ We will use **AWS Secrets Manager** to securely store credentials for use in the
 
     - Key: `bearer_token`  
       Value: your bearer token  
+![screen](pic/image017.png)
       Secret name: `twitter_api`
+![screen](pic/image019.png)
 
 4. Accept all other default settings and store the secret.
 
