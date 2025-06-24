@@ -27,7 +27,7 @@ Twitter recently updated its policy to allow the free API to collect 100 tweets 
 - Apply for a free Twitter Developer account at [https://developer.x.com/en]. A short [video demo](https://www.youtube.com/shorts/GBmR_bnqrOs) is available.
 - Log in to your developer account. Under **Projects & Apps**, find your default app. Click **Keys and Tokens**, and generate a **Bearer Token**.
 - Copy the Bearer Token and save it locally (e.g., in a text file).
-<img src="pic/image001.png" width="100%"/>
+<img src="pic/image001.png" width="100%" style="border: 3px solid #4CAF50; border-radius: 6px;"/>
 
 > If you can’t create a Twitter API, use the provided demo Tweet data.
 
