@@ -46,27 +46,29 @@ Next, create a database user. To simplify the workshop, we’ll use the same cre
 
 - Username: `demo`
 - Password: `UCGIS2025`
-<img src="pic/image005.png" width="100%"/>
+<img src="pic/image005.png" width="80%"/>
 
 While the cluster is being created, go to **Security > Network Access**, click **Edit**, and allow access from anywhere.
-<img src="pic/image007.png" width="100%"/>
+<img src="pic/image007.png" width="80%"/>
 
 - Open **Clusters > Connect > Drivers > Python**, copy the connection string, and save it locally.
+<img src="pic/image009.png" width="100%"/>
 - Download and install [MongoDB Compass](https://www.mongodb.com/try/download/compass).
 - Open Compass, paste the connection string, and update the password to `UCGIS2025`.
-
+<img src="pic/image012.png" width="100%"/>
 You should now see your cluster on the left side.
 
 ---
 
 ### AWS Academy Lab
 
-AWS Academy offers free credits for students to use AWS services like coding, machine learning, storage, and more.
+AWS Academy offers free credits for students to utilize AWS services, including coding, machine learning, storage, and more.
 
 - Accept your invitation to AWS Academy Learner Lab and create a password.
 - Log in at [https://awsacademy.instructure.com/login/canvas].
 - Open **Modules > Launch AWS Academy Learner Lab**.
 - Accept terms and click **Start Lab**. When the AWS dot turns green, click the AWS link to open the console.
+<img src="pic/image014.png" width="80%"/>
 
 #### Store Secrets in AWS Secrets Manager
 
