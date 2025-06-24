@@ -40,13 +40,16 @@ MongoDB is a popular NoSQL database that offers a free M0 cluster in its Atlas s
 - Accept the invitation and register your account at [https://www.mongodb.com](https://www.mongodb.com).
 - Log in and create a new project (name it after yourself).
 - In your project, create a free cluster.
+<img src="pic/image003.png" width="100%"/>
 
 Next, create a database user. To simplify the workshop, we’ll use the same credentials:
 
 - Username: `demo`
 - Password: `UCGIS2025`
+<img src="pic/image005.png" width="100%"/>
 
 While the cluster is being created, go to **Security > Network Access**, click **Edit**, and allow access from anywhere.
+<img src="pic/image007.png" width="100%"/>
 
 - Open **Clusters > Connect > Drivers > Python**, copy the connection string, and save it locally.
 - Download and install [MongoDB Compass](https://www.mongodb.com/try/download/compass).
