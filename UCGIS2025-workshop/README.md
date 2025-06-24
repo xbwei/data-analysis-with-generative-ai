@@ -93,7 +93,7 @@ We will use **AWS Secrets Manager** to securely store credentials for use in the
 3. Choose **Other type of secret**, then enter the key-value pair for your Twitter API:
 
     - Key: `bearer_token`  
-    - Value: your bearer token  
+    - Value: your bearer token
 ![screen](pic/image017.png)
     - Secret name: `twitter_api`
 ![screen](pic/image019.png)
@@ -261,6 +261,7 @@ After running the embedding steps:
 1. Open **MongoDB Compass**.
 2. Refresh the collection where you stored your tweets.
 3. Each document (tweet) should now contain an additional field — usually named `"embedding"` — which holds the numerical vector representing the semantic content of the tweet.
+
 ![screen](pic/image035.png)
 ---
 
