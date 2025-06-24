@@ -27,7 +27,7 @@ Twitter recently updated its policy to allow the free Twitter API to collect 100
 4. Log in to your Twitter developer account. Under **Projects & Apps**, you will find your default app.
 5. Click **Keys and tokens**, and generate a **Bearer Token**.
 6. Copy the Bearer Token and save it to your local computer, such as a text file.
-![Alt text](pic/image001.png)
+  ![screen](pic/image001.png)
 
 > If you can’t create a Twitter API, you can use the provided demo Tweet data.
 
