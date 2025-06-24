@@ -1,13 +1,11 @@
-# UCGIS 2025 Workshop
-
-## Advancing Social Media Analytics with AI
+# UCGIS 2025 Workshop: Advancing Social Media Analytics with AI
 
 **Instructor:** Xuebin Wei  
 **Associate Professor, School of Integrated Science, James Madison University**  
-📧 [weixx@jmu.edu](mailto:weixx@jmu.edu)  
-🌐 [www.lbsocial.net](https://www.lbsocial.net)  
-📘 **Textbook:** [Social Data Analytics in the Cloud with AI](https://www.taylorfrancis.com/books/mono/10.1201/9781003437611/social-data-analytics-cloud-ai-xuebin-wei-xinyue-ye)  
-💻 **Demo Code:** [GitHub Repository](https://github.com/xbwei/data-analysis-with-generative-ai)
+**Email:** weixx@jmu.edu  
+**Website:** [www.lbsocial.net](https://www.lbsocial.net)  
+**Textbook:** [Social Data Analytics in the Cloud with AI](https://www.taylorfrancis.com/books/mono/10.1201/9781003437611/social-data-analytics-cloud-ai-xuebin-wei-xinyue-ye)  
+**Demo Code:** [https://github.com/xbwei/data-analysis-with-generative-ai](https://github.com/xbwei/data-analysis-with-generative-ai)  
 
 ---
 
@@ -21,194 +19,194 @@ This hands-on workshop explores AI-powered social media analytics, focusing on T
 
 ### Twitter Free API
 
-Twitter recently updated its policy to allow the free API to collect 100 tweets per month.
+Twitter recently updated its policy to allow the free Twitter API to collect 100 Tweets per month.
 
-- Register for a Twitter account at [https://x.com](https://x.com) if you don’t already have one.
-- Apply for a free Twitter Developer account at [https://developer.x.com/en]. A short [video demo](https://www.youtube.com/shorts/GBmR_bnqrOs) is available.
-- Log in to your developer account. Under **Projects & Apps**, find your default app. Click **Keys and Tokens**, and generate a **Bearer Token**.
-- Copy the Bearer Token and save it locally (e.g., in a text file).
-<img src="pic/image001.png" width="100%" />
+1. Register for a Twitter account at [https://x.com](https://x.com) if you don’t already have one.
+2. Apply for a free Twitter developer account at [https://developer.x.com/en](https://developer.x.com/en) using your Twitter account.
+3. A short video demo is available here: [https://www.youtube.com/shorts/GBmR_bnqrOs](https://www.youtube.com/shorts/GBmR_bnqrOs).
+4. Log in to your Twitter developer account. Under **Projects & Apps**, you will find your default app.
+5. Click **Keys and Tokens**, and generate a **Bearer Token**.
+6. Copy the Bearer Token and save it to your local computer (e.g., in a `.txt` file).
 
-> If you can’t create a Twitter API, use the provided demo Tweet data.
+> If you can’t create a Twitter API, use the provided demo tweet data.
 
 ---
 
 ### MongoDB Cluster
 
-MongoDB is a popular NoSQL database that offers a free M0 cluster in its Atlas service.
+MongoDB is the most popular NoSQL database and offers a free M0 cluster through its Atlas service.
 
-- Accept the invitation and register your account at [https://www.mongodb.com](https://www.mongodb.com).
-- Log in and create a new project (name it after yourself).
-- In your project, create a free cluster.
-<img src="pic/image003.png" width="100%"/>
+1. Accept the invitation from MongoDB and register at [https://www.mongodb.com](https://www.mongodb.com).
+2. Once logged in, create a new project (you can name it after yourself).
+3. In your project, create a cluster. You can only have one free cluster per project.
+4. On the next screen, create a database user (different from your MongoDB login). Use the following credentials for simplicity:
+   - **Username:** `demo`
+   - **Password:** `UCGIS2025`
+5. While the cluster is being created, update **Network Access**:
+   - Under **Security**, click **Network Access**, then **Edit**.
+   - Allow access from anywhere.
 
-Next, create a database user. To simplify the workshop, we’ll use the same credentials:
+6. To get the connection string:
+   - Go to **Clusters** > **Connect** > **Drivers/Python**.
+   - Copy the connection string and save it locally.
 
-- Username: `demo`
-- Password: `UCGIS2025`
-<img src="pic/image005.png" width="80%"/>
-
-While the cluster is being created, go to **Security > Network Access**, click **Edit**, and allow access from anywhere.
-<img src="pic/image007.png" width="80%"/>
-
-- Open **Clusters > Connect > Drivers > Python**, copy the connection string, and save it locally.
-<img src="pic/image009.png" width="100%"/>
-- Download and install [MongoDB Compass](https://www.mongodb.com/try/download/compass).
-- Open Compass, paste the connection string, and update the password to `UCGIS2025`.
-<img src="pic/image012.png" width="100%"/>
-You should now see your cluster on the left side.
+7. Download and install [MongoDB Compass](https://www.mongodb.com/try/download/compass).
+8. Start Compass, create a new connection using the saved connection string. Replace the password with `UCGIS2025`.
+9. You should now see your cluster listed in the sidebar.
 
 ---
 
 ### AWS Academy Lab
 
-AWS Academy offers free credits for students to utilize AWS services, including coding, machine learning, storage, and more.
+AWS Academy provides free credits to students for cloud services.
 
-- Accept your invitation to AWS Academy Learner Lab and create a password.
-- Log in at [https://awsacademy.instructure.com/login/canvas].
-- Open **Modules > Launch AWS Academy Learner Lab**.
-- Accept terms and click **Start Lab**. When the AWS dot turns green, click the AWS link to open the console.
-<img src="pic/image014.png" width="80%"/>
+1. Accept the AWS Academy Learner Lab invitation.
+2. Set your password and complete account setup.
+3. Log in to [https://awsacademy.instructure.com/login/canvas](https://awsacademy.instructure.com/login/canvas).
+4. Go to **Modules** and click **Launch AWS Academy Learner Lab**.
+5. Accept terms and click **Start Lab**.
+6. When the green dot appears, click the AWS link to open the console.
 
 #### Store Secrets in AWS Secrets Manager
 
-- Open **Secrets Manager** and click **Store a new secret**.
-- Choose **Other type of secret** and enter the following credentials:
+1. Search for **Secrets Manager** in AWS Console and open it.
+2. Click **Store a new secret**.
+3. Select **Other type of secret**, and add the following:
 
-**Twitter API**  
-- Key: `bearer_token`  
-- Value: your bearer token
-<img src="pic/image017.png" width="100%" />
+**Twitter API:**
+- Key: `bearer_token`
+- Value: *your bearer token*
 - Secret name: `twitter_api`
-<img src="pic/image019.png" width="100%" />
 
-
-**MongoDB**  
-- Key: `connection_string`  
-- Value: your connection string (with password `UCGIS2025`)  
+**MongoDB:**
+- Key: `connection_string`
+- Value: *your connection string with password*
 - Secret name: `mongodb`
 
-**OpenAI API**  
-- Key: `api_key`  
-- Value: your OpenAI API key (from email)  
+**OpenAI:**
+- Key: `api_key`
+- Value: *your OpenAI API key from email*
 - Secret name: `openai`
-
-- Accept the default settings and store the secrets.
 
 ---
 
-### SageMaker Jupyter Notebook
+### Set Up SageMaker Notebook
 
-- In AWS Console, search for **Amazon SageMaker**, click **Notebooks**, and then **Create a notebook instance**.
-- Provide an instance name.
-- Under **Git repositories**, clone the public Git repository:  
-  `https://github.com/xbwei/data-analysis-with-generative-ai.git`
-<img src="pic/image021.png" width="100%" />
-- Leave default settings and create the instance (ready in 1–2 minutes).
-- Click **Open Jupyter** when the instance is in service.
+1. Search for **Amazon SageMaker** and go to **Notebook Instances**.
+2. Click **Create notebook instance**.
+3. Provide an instance name.
+4. Under Git repositories, select **Clone a public Git repository**.
+5. Repository URL: `https://github.com/xbwei/data-analysis-with-generative-ai.git`
+6. Leave all other settings default and create the instance.
+
+> It may take 1–2 minutes to be ready. Feel free to ask questions during the wait.
 
 ---
 
 ## Collect Twitter Data
 
-- Open **Collect_Twitter_Data** in JupyterLab.
-- Run each cell from top to bottom.
-  <img src="pic/image023.png" width="100%" />
-- You can change the keyword in the data collection cell (default: “generative AI”).
-  <img src="pic/image025.png" width="100%" />
+1. Once the notebook is in service, open **JupyterLab**.
+2. Open `Collect_Twitter_Data` notebook.
+3. Run each cell top to bottom.
+4. Modify the keyword in the query if desired (default: “generative AI”).
+5. After collection, refresh MongoDB Compass to see the data.
 
-After data is collected, refresh MongoDB Compass to view the tweets.
+### Optional: Import Demo Tweets
 
-> Optional: If you can’t collect tweets:
-> - Create a database `demo` and collection `tweet_collection` in Compass.
-<img src="pic/image027.png" width="100%" />
-> - Click **Import Data** and upload the demo tweets file from your email.
-<img src="pic/image029.png" width="100%" />
+If API access fails:
+
+1. In Compass, create a **database** named `demo`.
+2. Create a **collection** named `tweet_collection`.
+3. Click **Import Data**, and upload the demo file sent via email.
 
 ---
 
 ## Analyze Tweet Text with OpenAI
 
-- Open **Analyze_Twitter_Data**.
-- Execute all cells.
-
-This notebook uses the OpenAI API to perform:
-- Sentiment analysis
-- Language translation
-- Emotion detection
-- Entity extraction
-- Summarization
+1. Open the `Analyze_Twitter_Data` notebook.
+2. Run all cells in order.
+3. The notebook performs:
+   - Sentiment analysis
+   - Language translation
+   - Emotion detection
+   - Entity extraction
+   - Summarization
+4. Results are written back to MongoDB for each tweet.
 
 ---
 
 ## Analyze Tweet Images with OpenAI
 
-- Open **Twitter-Image-Classification-Recreation-Editing**.
-- Select the `conda_pytorch` kernel and run all cells.
+1. Open the `Twitter-Image-Classification-Recreation-Editing` notebook.
+2. Select the `conda_pytorch` kernel.
+3. Run all cells in sequence.
 
-This notebook:
-- Extracts tweets containing images
-- Analyzes images and generates descriptions
-- Recreates new images based on prompts
-- Uses PyTorch to create a segmentation mask
+Tasks include:
+- Extracting tweets with images.
+- Analyzing and describing images.
+- Randomly selecting one image to recreate using your prompt.
+- Generating new images based on AI interpretations.
+- Optionally applying a PyTorch mask.
 
-> Re-run the image cell to view a different image.
-> Edit the prompt in the last cell to experiment with generated images.
+> To change the image, re-run the image selection cell. Customize prompts to create different images.
 
 ---
 
 ## Vector Database and RAG System
 
-- Open **Exploring-Twitter-Data-with-Vector-Databases-and-RAG-Systems**.
-- Run all cells.
+1. Open the `Exploring-Twitter-Data-with-Vector-Databases-and-RAG-Systems` notebook.
+2. Run all cells.
 
-This notebook:
-- Creates a vector database on MongoDB
-- Embeds tweet text
-- Implements a chatbot using Retrieval-Augmented Generation (RAG)
-
-You can now ask the chatbot questions such as:
-- “What’s the latest AI news in my tweets?”
-- “Summarize what people are saying about studying AI.”
+Steps:
+- Create vector embeddings for tweet text.
+- Store vectors in MongoDB.
+- View embeddings in Compass.
+- Implement a chatbot using RAG.
+- Ask it questions like:
+  - “What are people saying about AI education?”
+  - “Summarize public opinions on ChatGPT.”
 
 ---
 
 ## Query Twitter Data in Compass
 
-- Open Compass and click **Generate Query**.
-- Log in with your Atlas account.
-- Ask questions in natural language, such as:
-  - “Which tweets have the most likes?”
-  - “How many tweets are positive?”
-  - “Top 10 popular Twitter users”
-  - “Top 10 extracted organizations”
+1. Open MongoDB Compass and go to `tweet_collection`.
+2. Click **Generate Query**.
+3. Log in with your Atlas credentials if prompted.
+4. Ask questions in natural language like:
+   - “Which tweets have the most likes?”
+   - “How many tweets’ sentiment is Positive?”
+   - “Top 10 extracted organizations”
 
-> MongoDB will convert your questions into document queries or aggregation pipelines. Always verify results.
+> MongoDB will convert the question into a query or aggregation pipeline. Verify correctness manually.
 
 ---
 
 ## Visualize Twitter Data with MongoDB Charts
 
-- Open **MongoDB Atlas > Charts**.
-- Wait for initialization. Once ready, open your dashboard.
+1. In MongoDB Atlas, click **Charts**.
+2. Wait for initialization. Then open your dashboard.
 
-### Manually Create Charts
+### Create Charts Manually
 
-- Select `tweet_collection` from the `demo` database.
-- Drag fields into the chart editor.
-- Example: Number chart of tweet IDs, stacked bar chart for sentiment and emotion.
+- Select the `tweet_collection` from `demo`.
+- Examples:
+  - **Number chart**: count of tweet IDs.
+  - **Stacked bar**: tweet ID (X), sentiment (Y), series = anger.
+  - **Map**: user location and count of tweets.
 
-### Create Charts with Natural Language
+### Create Charts Using Natural Language
 
-- Add a new chart and switch to **Natural Language Chart**.
-- Ask: “Top 10 most popular Twitter users,” “Most common hashtags,” or “Top 10 extracted persons.”
-
-> Natural language charts may be inaccurate—verify outputs.
+- Add chart > switch to **Natural Language Chart**.
+- Example questions:
+  - “Top 10 most popular Twitter users”
+  - “Most common hashtags”
+  - “Top 10 extracted persons”
 
 ### Enable Filters
 
-- Add filters to make the dashboard interactive (e.g., sentiment).
-- Clicking a filter (like “Negative”) updates all other charts accordingly.
+- Add filters (e.g., by sentiment).
+- Clicking a filter like “Negative” updates all charts dynamically.
 
 ---
 
@@ -216,26 +214,26 @@ You can now ask the chatbot questions such as:
 
 ### AWS Learner Lab
 
-- Try other notebooks.
-- When finished, close JupyterLab and stop the instance.
-- End your AWS Learner Lab.
-
-⏳ Your AWS Academy Lab is available until **10/31/2025**.
+- Feel free to try other notebooks.
+- When done:
+  - Close JupyterLab.
+  - Stop notebook instance.
+  - Click **End Lab** in AWS Learner Lab.
 
 ### MongoDB
 
 - Your cluster is free forever.
-- Instructor access is possible—create a new project if needed.
+- Instructor can access data in this organization.
+- Delete and recreate your project under a new org if you want privacy.
 
 ### Twitter API
 
-- You control your API. Free tier: 100 tweets/month.
+- You have full control.
+- Free tier: 100 tweets/month.
 
 ### OpenAI API
 
-- The workshop API key will be revoked after the session.
-- Purchase your own key to continue using OpenAI.
+- This key will be revoked after the workshop.
+- To continue using OpenAI, get a new key at [https://platform.openai.com](https://platform.openai.com).
 
 ---
-
-Thank you for participating in the UCGIS 2025 Workshop on **Advancing Social Media Analytics with AI**!
