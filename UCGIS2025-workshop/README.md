@@ -4,7 +4,7 @@
 **Associate Professor, School of Integrated Science, James Madison University**  
 **Email:** weixx@jmu.edu  
 **Website:** www.lbsocial.net  
-**Yourube:** https://www.youtube.com/@LBSocial
+**Yourube:** https://www.youtube.com/@LBSocial  
 **Textbook:** [Social Data Analytics in the Cloud with AI](https://www.taylorfrancis.com/books/mono/10.1201/9781003437611/social-data-analytics-cloud-ai-xuebin-wei-xinyue-ye)  
 **Demo Code:** https://github.com/xbwei/data-analysis-with-generative-ai  
 
