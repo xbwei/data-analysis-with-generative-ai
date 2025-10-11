@@ -4,7 +4,9 @@
 #ignore the tweet data
 tweet_collection.txt
 
-
+#ignore the tools
+tools/*
+tools/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
