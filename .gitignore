@@ -3,6 +3,7 @@
 
 #ignore the tweet data
 tweet_collection.txt
+tweet_text.json
 
 #ignore the tools
 tools/*
