@@ -2,7 +2,7 @@
 
 This public repository contains advanced notebooks and tutorials that explore how generative AI tools—such as OpenAI’s GPT models—can be applied for social data analysis, prompt engineering, and automated workflows.
 
-It complements the textbook **Social Data Analytics in the Cloud with AI** (Wei & Ye, 2024) and previews cutting-edge methods under development for the upcoming second edition.
+It complements the textbook **Social Data Analytics in the Cloud with AI** (Wei & Ye, 2024) and serves as an evolving collection of teaching, research, and tutorial materials on AI-assisted data analysis workflows.
 
 ---
 
@@ -75,12 +75,11 @@ Here’s what’s included:
 **Social Data Analytics in the Cloud with AI**  
 [Wei, Xuebin, and Xinyue Ye. CRC Press, 2024](https://www.taylorfrancis.com/books/mono/10.1201/9781003437611/social-data-analytics-cloud-ai-xuebin-wei-xinyue-ye)
 
-
 ---
 
 ## 📅 Looking Ahead
 
-This repository is part of the research and development for the second edition of the textbook, which will include:
+This repository will continue to collect and update practical examples of generative AI–assisted data analysis, including:
 
 - LLM-powered agents for data processing
 - Function calling with external tools (e.g., MongoDB, APIs, ArcGIS)
