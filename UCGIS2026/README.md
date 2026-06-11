@@ -38,3 +38,8 @@ The official workshop title includes multimodal embeddings. Text-image embedding
 The talk is intentionally separated from the workshop. The workshop provides the detailed Neo4j and GraphRAG exercises; the lightning talk presents the broader AI teaching-stack concept.
 
 - [Talk outline](talk.md)
+- [Local / GitHub Pages talk deck](talk.html)
+
+When published from the `ucgis2026-pages` branch with GitHub Pages, the deck is expected at:
+
+<https://xbwei.github.io/data-analysis-with-generative-ai/UCGIS2026/talk.html>
