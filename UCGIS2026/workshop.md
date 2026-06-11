@@ -21,6 +21,15 @@ All workshop activities use free tiers. You do not need to purchase anything or 
 
 ---
 
+## Important Free-Tier Notes
+
+- During the workshop, use the provided dataset of **100 synthetic tweets** and run the ETL ingestion step **only once**. Loading substantially more data or rerunning the ingestion unnecessarily may exceed free-tier limits or create duplicate records.
+- Free-tier API calls may occasionally return a temporary **not available** or similar error. Wait a moment and try again.
+- If a free-tier service is temporarily unavailable or you reach a usage limit during the workshop, that is okay. The follow-up tutorials include videos so you can complete the exercises later at your own pace.
+- You may continue using the AuraDB Free database, Google Colab, and the Gemini free tier after the workshop, subject to each provider's current free-tier limits and service availability.
+
+---
+
 ## Workshop Outcomes
 
 By the end of the workshop, you will have:
@@ -351,29 +360,6 @@ Which users are most active, and what topics do they discuss?
 
 ---
 
-## Image Upload Checklist
-
-Upload the following files into `UCGIS2026/images/`:
-
-```text
-01-start-free-instance.png
-02-select-auradb-free-tier.png
-03-auradb-free-running.jpg
-04-colab-secrets.jpg
-05-ai-query-cypher.jpg
-06-explore-hashtag-ai-graph.jpg
-07-dashboard-create-with-ai.jpg
-08-dashboard-overview.jpg
-09-dashboard-place-parameter.jpg
-10-dashboard-place-cypher.jpg
-11-agent-create-with-ai.jpg
-12-agent-prompt-example.jpg
-13-agent-tool-reasoning.jpg
-14-agent-result.jpg
-```
-
----
-
 ## Troubleshooting Checklist
 
 - Skip the default onboarding trial instance after registration.
@@ -381,5 +367,6 @@ Upload the following files into `UCGIS2026/images/`:
 - Download and save the AuraDB credentials file.
 - Use the exact Colab Secret names listed above.
 - Enable notebook access for each secret.
-- Run the ETL notebook before the GraphRAG notebook.
+- Run the ETL notebook only once with the provided 100 synthetic tweets.
+- If an API temporarily reports **not available**, wait a moment and try again.
 - Never share or commit API keys and passwords.
