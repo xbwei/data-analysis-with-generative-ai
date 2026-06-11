@@ -1,6 +1,6 @@
 # UCGIS 2026 Materials
 
-This folder contains materials for Dr. Xuebin Wei's UCGIS 2026 workshop and lightning talk.
+This folder contains materials for Dr. Xuebin Wei's UCGIS 2026 workshop and lightning talk as a participant from James Madison University.
 
 ## Workshop
 
@@ -25,7 +25,7 @@ The official workshop title includes multimodal embeddings. Text-image embedding
 - [Social_Media_ETL_Neo4j_Python.ipynb](https://github.com/lbsocial/data-analysis-with-generative-ai/blob/main/Social_Media_ETL_Neo4j_Python.ipynb)
 - [GraphRAG_Social_Media_Neo4j.ipynb](https://github.com/lbsocial/data-analysis-with-generative-ai/blob/main/GraphRAG_Social_Media_Neo4j.ipynb)
 
-### LBSocial Tutorial Series
+### Further Reading
 
 1. [Social Media Knowledge Graph: Python & Neo4j](https://www.lbsocial.net/post/social-media-knowledge-graph-python-neo4j)
 2. [Neo4j Tutorial: Cypher, Generative AI & Dashboard](https://www.lbsocial.net/post/neo4j-tutorial-cypher-generative-ai-dashboard)
