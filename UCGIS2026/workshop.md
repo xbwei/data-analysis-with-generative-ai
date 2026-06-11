@@ -2,7 +2,7 @@
 
 ## Advancing Social Media Analytics in Neo4j: Multimodal Embeddings and AI Agents with Knowledge Graphs
 
-**Instructor:** Dr. Xuebin Wei ([LBSocial](https://www.lbsocial.net/))  
+**Instructor:** Dr. Xuebin Wei, James Madison University  
 **Official workshop description:** [UCGIS 2026 Sched page](https://ucgissymposium2026.sched.com/event/2KN6D/advancing-social-media-analytics-in-neo4j-multimodal-embeddings-and-ai-agents-with-knowledge-graphs)
 
 Welcome! In this hands-on workshop, you will build a social media knowledge graph in Neo4j, explore it with natural-language queries, create text embeddings, run a Python GraphRAG workflow, and configure a free Neo4j Graph Agent.
@@ -43,10 +43,20 @@ Bring a laptop with a web browser. No local installation is required. The Python
 
 > The free AuraDB instance is sufficient for this workshop. Do not share your password or commit credentials to GitHub.
 
-The screenshot below shows the expected result after creating an AuraDB Free instance:
+<p align="center">
+  <img src="images/01-start-free-instance.png" alt="Neo4j Aura start with free instance screen" width="600">
+</p>
+
+*Start with a free Neo4j Aura instance. No credit card is required.*
 
 <p align="center">
-  <img src="https://static.wixstatic.com/media/a30372_38df42c3d9f04dfbae310b4695b30af1~mv2.jpg" alt="Neo4j Aura running free instance" width="850">
+  <img src="images/02-select-auradb-free-tier.png" alt="Neo4j Aura select Free tier screen" width="950">
+</p>
+
+*Select the **Free** AuraDB tier rather than the default trial.*
+
+<p align="center">
+  <img src="images/03-auradb-free-running.jpg" alt="Neo4j Aura running free instance" width="850">
 </p>
 
 *A successfully created AuraDB Free instance should appear as **RUNNING**.*
@@ -70,13 +80,11 @@ GOOGLE_API_KEY
 
 The ETL notebook uses the three Neo4j values. The GraphRAG notebook uses all four values.
 
-Store the credentials in the Colab **Secrets** panel rather than pasting them into notebook cells.
-
 <p align="center">
-  <img src="https://static.wixstatic.com/media/a30372_c42395e4242d49849993fc4d8b890077~mv2.jpg" alt="Google Colab Secrets panel" width="800">
+  <img src="images/04-colab-secrets.jpg" alt="Google Colab Secrets panel" width="800">
 </p>
 
-*Use the Colab key icon to create private notebook secrets and enable notebook access.*
+*Store credentials in the Colab **Secrets** panel rather than pasting them into notebook cells.*
 
 ---
 
@@ -112,7 +120,7 @@ After the ETL notebook completes:
 1. Open your Neo4j AuraDB instance.
 2. Open the **Explore** tool.
 3. Double-click nodes to expand the network.
-4. Use the AI query feature to translate plain English into Cypher.
+4. Use the AI Query feature to translate plain English into Cypher.
 
 Try:
 
@@ -131,42 +139,34 @@ RETURN u.username, t.text, h.name
 LIMIT 25;
 ```
 
-Neo4j can generate Cypher from a plain-English question and display the results immediately:
-
 <p align="center">
-  <img src="https://static.wixstatic.com/media/a30372_103859ac3ecf481b92407473210c2786~mv2.jpg" alt="Neo4j AI Query generated Cypher and results" width="950">
+  <img src="images/05-ai-query-cypher.jpg" alt="Neo4j AI Query generated Cypher and results" width="950">
 </p>
 
 *Neo4j AI Query translates a natural-language request into Cypher and returns matching users.*
 
-You can also inspect the same relationships visually in the Explore interface:
-
 <p align="center">
-  <img src="https://static.wixstatic.com/media/a30372_4b6a1425d565402fa70f09829dbdc026~mv2.jpg" alt="Neo4j Explore graph visualization" width="950">
+  <img src="images/06-explore-hashtag-ai-graph.jpg" alt="Neo4j Explore graph visualization" width="950">
 </p>
 
-*The Explore view reveals the connected `User`, `Tweet`, `Hashtag`, and `Place` nodes.*
+*The Explore view reveals connected `User`, `Tweet`, `Hashtag`, and `Place` nodes.*
 
 ### Part 3: Optional Dashboard Demonstration
 
-Neo4j can also generate an interactive dashboard from plain-English instructions. A useful example is:
+Neo4j can generate an interactive dashboard from plain-English instructions. A useful prompt is:
 
 ```text
 I want to explore the locations of tweets, popular hashtags, and date.
 ```
 
-Use the **Create with AI** dialog to generate an initial dashboard layout:
-
 <p align="center">
-  <img src="https://static.wixstatic.com/media/a30372_752b269b7aeb4f22821f56cbbb649b03~mv2.jpg" alt="Neo4j dashboard Create with AI dialog" width="850">
+  <img src="images/07-dashboard-create-with-ai.jpg" alt="Neo4j dashboard Create with AI dialog" width="850">
 </p>
 
 *Describe the dashboard in plain English and let Neo4j generate an initial layout.*
 
-The generated dashboard can combine maps, counts, charts, and filters:
-
 <p align="center">
-  <img src="https://static.wixstatic.com/media/a30372_a104d81523b84216bccdfd13aac03dbe~mv2.jpg" alt="Neo4j Twitter activity dashboard" width="950">
+  <img src="images/08-dashboard-overview.jpg" alt="Neo4j Twitter activity dashboard" width="950">
 </p>
 
 *Example dashboard showing tweet locations, hashtag counts, and activity trends.*
@@ -177,15 +177,17 @@ You can add interactive parameters for places and hashtags. For example:
 WHERE (p.name = $place_name OR $place_name IS NULL)
 ```
 
-The parameter editor allows participants to connect a place selector to `$place_name`:
-
 <p align="center">
-  <img src="https://static.wixstatic.com/media/a30372_ce5d810421314b8d99751123f60f8b0f~mv2.jpg" alt="Neo4j dashboard place parameter selector" width="950">
+  <img src="images/09-dashboard-place-parameter.jpg" alt="Neo4j dashboard place parameter selector" width="950">
 </p>
 
-*A reusable place filter can be linked to the `$place_name` parameter.*
+*Link a reusable place selector to the `$place_name` parameter.*
 
-This section may be demonstrated briefly if time allows.
+<p align="center">
+  <img src="images/10-dashboard-place-cypher.jpg" alt="Neo4j dashboard map Cypher query using place parameter" width="950">
+</p>
+
+*Use `$place_name` in the map query so the dashboard updates interactively.*
 
 ### Part 4: Create Text Embeddings and Build GraphRAG
 
@@ -261,21 +263,29 @@ Use Neo4j's no-code AI agent interface:
 4. Add specific instructions describing the schema and the desired retrieval strategy.
 5. Test the agent in the Neo4j website interface.
 
-The agent-creation dialog lets you choose the instance, embedding model, and system prompt:
-
 <p align="center">
-  <img src="https://static.wixstatic.com/media/a30372_65c05b802c54465e8a7f3da67d51da75~mv2.jpg" alt="Neo4j Create with AI agent form" width="850">
+  <img src="images/11-agent-create-with-ai.jpg" alt="Neo4j Create with AI agent form" width="850">
 </p>
 
 *Create an Aura agent using the graph instance, the embedding model, and a schema-aware prompt.*
 
-After testing, the agent can return a grounded analytical summary based on the graph:
-
 <p align="center">
-  <img src="https://static.wixstatic.com/media/a30372_70f194d6f93b4206b813dc3c3b76f997~mv2.jpg" alt="Neo4j Graph Agent final result" width="950">
+  <img src="images/12-agent-prompt-example.jpg" alt="Neo4j Graph Agent prompt drafting example" width="950">
 </p>
 
-*Example output from a GraphRAG social-media agent summarizing popular AI-related tweets.*
+*Use a specific prompt that describes the schema and the expected tasks.*
+
+<p align="center">
+  <img src="images/13-agent-tool-reasoning.jpg" alt="Neo4j Graph Agent tool reasoning example" width="850">
+</p>
+
+*The agent may select different tools, such as Text2Cypher and user-specific graph queries.*
+
+<p align="center">
+  <img src="images/14-agent-result.jpg" alt="Neo4j Graph Agent final result" width="950">
+</p>
+
+*Example output from a graph-aware social-media analytics agent.*
 
 > Building, testing, and querying the agent within the Neo4j website interface is free. External deployment, such as an API or MCP server, may require a paid tier.
 
@@ -316,22 +326,36 @@ Which users are most active, and what topics do they discuss?
 
 ---
 
-## LBSocial Tutorial Series
-
-The workshop is based on four LBSocial tutorials:
+## Further Reading
 
 1. [Social Media Knowledge Graph: Python & Neo4j](https://www.lbsocial.net/post/social-media-knowledge-graph-python-neo4j)
 2. [Neo4j Tutorial: Cypher, Generative AI & Dashboard](https://www.lbsocial.net/post/neo4j-tutorial-cypher-generative-ai-dashboard)
 3. [Geo-GraphRAG Tutorial: Neo4j & Gemini](https://www.lbsocial.net/post/geo-graphrag-tutorial-neo4j-gemini)
 4. [Neo4j Agent: Free No-Code GraphRAG](https://www.lbsocial.net/post/neo4j-agent-free-no-code-graphrag)
+5. [Optional extension: Build a Multimodal Search Engine with Python](https://www.lbsocial.net/post/build-multimodal-search-engine-python)
 
 ---
 
-## Optional Extension: Multimodal Search
+## Image Upload Checklist
 
-The live workshop will not cover text-image embeddings. For an optional follow-up tutorial, see:
+Upload the following files into `UCGIS2026/images/`:
 
-- [Build a Multimodal Search Engine with Python](https://www.lbsocial.net/post/build-multimodal-search-engine-python)
+```text
+01-start-free-instance.png
+02-select-auradb-free-tier.png
+03-auradb-free-running.jpg
+04-colab-secrets.jpg
+05-ai-query-cypher.jpg
+06-explore-hashtag-ai-graph.jpg
+07-dashboard-create-with-ai.jpg
+08-dashboard-overview.jpg
+09-dashboard-place-parameter.jpg
+10-dashboard-place-cypher.jpg
+11-agent-create-with-ai.jpg
+12-agent-prompt-example.jpg
+13-agent-tool-reasoning.jpg
+14-agent-result.jpg
+```
 
 ---
 
