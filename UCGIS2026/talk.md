@@ -17,7 +17,7 @@ My idea is simple. AI is changing very fast. It is becoming a stronger tool for 
 
 ---
 
-## My Idea: Three Stages
+## AI: Three Stages
 
 <div class="stage-overview">
   <div class="stage-card prompt">
@@ -39,16 +39,34 @@ My idea is simple. AI is changing very fast. It is becoming a stronger tool for 
   </div>
 </div>
 
-<div class="experiment-strip">
-  <div class="mini-node">tutorial videos</div>
-  <div class="mini-line"></div>
-  <div class="mini-node strong">KG/MCP search</div>
-  <div class="mini-line"></div>
-  <div class="mini-node">clips for this deck</div>
+Note:
+I see the recent development of AI in three broad stages. First, prompt engineering: we learned how to ask better. Second, context engineering: we learned how to give AI the right materials. Third, harness engineering: we give AI tools, MCP services, cloud systems, and scale. This is not a complete history of AI, but it is a useful way to explain how my teaching and research practice has changed.
+
+---
+
+## How This Deck Was Built
+
+<div class="build-flow">
+  <div class="build-source">
+    <h3>My teaching corpus</h3>
+    <p>Tutorials, YouTube videos, transcripts, notebooks, and related course materials are indexed in a graph database.</p>
+  </div>
+  <div class="build-arrow">-&gt;</div>
+  <div class="build-source agent">
+    <h3>AI agent + MCP</h3>
+    <p>Codex uses an MCP server to query that graph and retrieve relevant examples for this talk.</p>
+  </div>
+  <div class="build-arrow">-&gt;</div>
+  <div class="build-source output">
+    <h3>Slide evidence</h3>
+    <p>The retrieved materials help select demo clips and connect them to the prompt, context, and harness story.</p>
+  </div>
 </div>
 
+<p class="build-caption">The deck is also a small example of harness engineering: an agent using tools and my own knowledge base to support presentation design.</p>
+
 Note:
-I want to make clear that this is my own idea from my own recent work. I see the change in three stages. First, prompt engineering: we learned how to ask better. Second, context engineering: we learned how to give AI the right materials. Third, harness engineering: we give AI tools, MCP services, cloud systems, and scale. For this talk, I also used an AI agent to call my KG/MCP service, search my tutorial knowledge graph, and find the video segments that match this story. So this presentation is also a small example of what I am talking about.
+I also want to explain how this deck was built. I have a graph database that stores my tutorials, videos, transcripts, notebooks, and related teaching materials. Instead of searching manually through everything, I used an AI agent, Codex, connected through an MCP server, to query that knowledge graph. It helped retrieve relevant previous teaching examples and video clips. So the deck itself is a small example of the workflow I am describing.
 
 ---
 
@@ -192,7 +210,7 @@ For GIScience and GeoAI, context is even more important. Spatial questions inclu
       <span>scale</span>
     </div>
   </div>
-  <div class="video-row two">
+  <div class="video-row two harness-videos">
     <div class="video-card small">
       <iframe src="https://www.youtube.com/embed/Dna_DZLC8d0?start=70" title="MCP and KG agent tutorial" allowfullscreen></iframe>
       <p><a href="https://www.youtube.com/watch?v=Dna_DZLC8d0&t=70s">MCP + KG agent</a></p>
@@ -308,7 +326,7 @@ This is the most important part for me. AI may become very powerful, but it is s
 
 ---
 
-## A Personal Teaching Stack
+## Current Experiment: Three Modes
 
 <div class="mode-stack">
   <div class="mode-card">
@@ -325,21 +343,21 @@ This is the most important part for me. AI may become very powerful, but it is s
   </div>
 </div>
 
-<p class="closing-line">This is a teaching stack, not one chatbot.</p>
+<p class="closing-line">Current experiment: AI support for learning, teaching, and analysis workflows.</p>
 
 Note:
-After the demos and the human-centered question, this is the practical structure I am building. I organize the system into three modes: Study Mode for students, Teaching Mode for instructors, and Analysis Mode for research and analytical work. These modes are connected, but they serve different users and different responsibilities.
+After the demos and the human-centered question, this is the practical structure I am building. The current experiment has three modes: Study Mode, Teaching Mode, and Analysis Mode. The emphasis is not that AI replaces these activities; the emphasis is that AI can support different kinds of educational and research work when the workflow is designed carefully.
 
 ---
 
 ## Study Mode
 
 <div class="screenshot-grid">
-  <figure class="screenshot-card">
+  <figure class="screenshot-card zoomable">
     <img src="images/study-1.png" alt="Study Mode interface screenshot 1">
     <figcaption>Course-grounded learning support</figcaption>
   </figure>
-  <figure class="screenshot-card">
+  <figure class="screenshot-card zoomable">
     <img src="images/study-2.png" alt="Study Mode interface screenshot 2">
     <figcaption>Student questions connected to trusted materials</figcaption>
   </figure>
@@ -353,11 +371,11 @@ Study Mode is for students. It should help them work with trusted course materia
 ## Teaching Mode
 
 <div class="screenshot-grid">
-  <figure class="screenshot-card">
+  <figure class="screenshot-card zoomable">
     <img src="images/teaching-1.png" alt="Teaching Mode interface screenshot 1">
     <figcaption>Instructor workflow support</figcaption>
   </figure>
-  <figure class="screenshot-card">
+  <figure class="screenshot-card zoomable">
     <img src="images/teaching-2.png" alt="Teaching Mode interface screenshot 2">
     <figcaption>Drafting materials with human review</figcaption>
   </figure>
@@ -371,11 +389,11 @@ Teaching Mode is for instructors. It can support the preparation of lessons, lab
 ## Analysis Mode
 
 <div class="screenshot-grid">
-  <figure class="screenshot-card">
+  <figure class="screenshot-card zoomable">
     <img src="images/analysi-1.png" alt="Analysis Mode interface screenshot 1">
     <figcaption>Research and data workflow support</figcaption>
   </figure>
-  <figure class="screenshot-card">
+  <figure class="screenshot-card zoomable">
     <img src="images/analysis-2.png" alt="Analysis Mode interface screenshot 2">
     <figcaption>Dashboards, evidence, and GeoAI analysis</figcaption>
   </figure>
@@ -388,28 +406,19 @@ Analysis Mode connects the same stack to research and analysis. It can support d
 
 ## What This Means for GIScience and GeoAI
 
-<div class="final-grid">
-  <div class="mode-mini">
-    <span>Study Mode</span>
-    <p>learn</p>
-  </div>
-  <div class="mode-mini">
-    <span>Teaching Mode</span>
-    <p>teach</p>
-  </div>
-  <div class="mode-mini">
-    <span>Analysis Mode</span>
-    <p>research</p>
+<div class="final-message">
+  <ol class="final-points">
+    <li><strong>Extend human capacity.</strong> Use AI to reduce repetitive work and make ambitious teaching and research workflows more feasible.</li>
+    <li><strong>Build brain muscle.</strong> Students still need critical thinking, question framing, evidence evaluation, and disciplinary judgment.</li>
+    <li><strong>Decide what matters.</strong> AI can expand what we can do; humans must decide the purpose, standards, and consequences.</li>
+  </ol>
+  <div class="final-contact">
+    <p class="name">Xuebin Wei</p>
+    <p>James Madison University</p>
+    <p><a href="mailto:weixx@jmu.edu">weixx@jmu.edu</a></p>
+    <p><a href="https://www.lbsocial.net">lbsocial.net</a></p>
   </div>
 </div>
 
-<ol class="final-points">
-  <li>Use AI to extend human capacity and reduce repetitive work.</li>
-  <li>Teach students to build critical thinking and exercise their brain muscle.</li>
-  <li>Keep humans as the question askers, because humans care about the world.</li>
-</ol>
-
-<p class="closing-line">AI can expand what we can do. Humans must decide what matters.</p>
-
 Note:
-My suggestion is practical. I am building Study Mode, Teaching Mode, and Analysis Mode because AI can support learning, teaching, and research workflows. It can help fewer people accomplish more meaningful work in less time. But this does not mean students should think less. They need to build critical thinking and exercise their brain muscle. Humans are still the question askers, because humans have life and humans care about the world.
+My final suggestion is practical. Use AI to extend human capacity and reduce repetitive work. But this does not mean students should think less. They need to build critical thinking, question framing, evidence evaluation, and disciplinary judgment. AI can expand what we can do, but humans must decide what matters.
