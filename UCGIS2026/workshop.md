@@ -33,30 +33,33 @@ Bring a laptop with a web browser. No local installation is required. The Python
 ### Step 0A: Create a Free Neo4j AuraDB Instance
 
 1. Go to [Neo4j Aura](https://neo4j.com/cloud/aura/) and sign up or log in.
-2. **Do not create the default trial instance.** Decline or skip the trial option.
-3. Click **Create Instance** and select **AuraDB Free**.
-4. Download the credentials `.txt` file and store it safely.
-5. You will need:
+2. **Do not create the default trial instance shown immediately after registration.** Although the onboarding screen says "Start with free instance," this is the temporary trial flow. Select **Skip, I'll create an instance later**.
+
+<p align="center">
+  <img src="images/01-start-free-instance.png" alt="Neo4j Aura onboarding screen with skip option" width="380">
+</p>
+
+*Skip the default onboarding instance. We will create the actual AuraDB Free instance manually.*
+
+3. From the AuraDB Instances page, click **Create instance**.
+4. Select the **Free** AuraDB tier. Do not select the Professional free trial.
+
+<p align="center">
+  <img src="images/02-select-auradb-free-tier.png" alt="Neo4j Aura select Free tier screen" width="650">
+</p>
+
+*Select the actual **Free** AuraDB tier.*
+
+5. Create the instance and download the credentials `.txt` file.
+6. Store the file safely. You will need:
    - `NEO4J_URI`
    - `NEO4J_USERNAME`
    - `NEO4J_PASSWORD`
 
-> The free AuraDB instance is sufficient for this workshop. Do not share your password or commit credentials to GitHub.
+> The AuraDB Free instance is sufficient for this workshop. Do not share your password or commit credentials to GitHub.
 
 <p align="center">
-  <img src="images/01-start-free-instance.png" alt="Neo4j Aura start with free instance screen" width="600">
-</p>
-
-*Start with a free Neo4j Aura instance. No credit card is required.*
-
-<p align="center">
-  <img src="images/02-select-auradb-free-tier.png" alt="Neo4j Aura select Free tier screen" width="950">
-</p>
-
-*Select the **Free** AuraDB tier rather than the default trial.*
-
-<p align="center">
-  <img src="images/03-auradb-free-running.jpg" alt="Neo4j Aura running free instance" width="850">
+  <img src="images/03-auradb-free-running.jpg" alt="Neo4j Aura running free instance" width="600">
 </p>
 
 *A successfully created AuraDB Free instance should appear as **RUNNING**.*
@@ -81,10 +84,10 @@ GOOGLE_API_KEY
 The ETL notebook uses the three Neo4j values. The GraphRAG notebook uses all four values.
 
 <p align="center">
-  <img src="images/04-colab-secrets.jpg" alt="Google Colab Secrets panel" width="800">
+  <img src="images/04-colab-secrets.jpg" alt="Google Colab Secrets panel example" width="500">
 </p>
 
-*Store credentials in the Colab **Secrets** panel rather than pasting them into notebook cells.*
+> **Note:** The screenshot is only an example of the Colab Secrets interface. For this workshop, create the four secrets exactly as listed above: `NEO4J_URI`, `NEO4J_USERNAME`, `NEO4J_PASSWORD`, and `GOOGLE_API_KEY`.
 
 ---
 
@@ -140,13 +143,13 @@ LIMIT 25;
 ```
 
 <p align="center">
-  <img src="images/05-ai-query-cypher.jpg" alt="Neo4j AI Query generated Cypher and results" width="950">
+  <img src="images/05-ai-query-cypher.jpg" alt="Neo4j AI Query generated Cypher and results" width="650">
 </p>
 
 *Neo4j AI Query translates a natural-language request into Cypher and returns matching users.*
 
 <p align="center">
-  <img src="images/06-explore-hashtag-ai-graph.jpg" alt="Neo4j Explore graph visualization" width="950">
+  <img src="images/06-explore-hashtag-ai-graph.jpg" alt="Neo4j Explore graph visualization" width="650">
 </p>
 
 *The Explore view reveals connected `User`, `Tweet`, `Hashtag`, and `Place` nodes.*
@@ -160,16 +163,20 @@ I want to explore the locations of tweets, popular hashtags, and date.
 ```
 
 <p align="center">
-  <img src="images/07-dashboard-create-with-ai.jpg" alt="Neo4j dashboard Create with AI dialog" width="850">
+  <img src="images/07-dashboard-create-with-ai.jpg" alt="Neo4j dashboard Create with AI dialog" width="550">
 </p>
 
 *Describe the dashboard in plain English and let Neo4j generate an initial layout.*
 
 <p align="center">
-  <img src="images/08-dashboard-overview.jpg" alt="Neo4j Twitter activity dashboard" width="950">
+  <img src="images/08-dashboard-overview.jpg" alt="Neo4j Twitter activity dashboard" width="700">
 </p>
 
 *Example dashboard showing tweet locations, hashtag counts, and activity trends.*
+
+#### Optional Exercise: Add Dashboard Parameters
+
+Adding place and hashtag parameters is optional. If time allows, try this exercise independently.
 
 You can add interactive parameters for places and hashtags. For example:
 
@@ -178,13 +185,13 @@ WHERE (p.name = $place_name OR $place_name IS NULL)
 ```
 
 <p align="center">
-  <img src="images/09-dashboard-place-parameter.jpg" alt="Neo4j dashboard place parameter selector" width="950">
+  <img src="images/09-dashboard-place-parameter.jpg" alt="Neo4j dashboard place parameter selector" width="650">
 </p>
 
 *Link a reusable place selector to the `$place_name` parameter.*
 
 <p align="center">
-  <img src="images/10-dashboard-place-cypher.jpg" alt="Neo4j dashboard map Cypher query using place parameter" width="950">
+  <img src="images/10-dashboard-place-cypher.jpg" alt="Neo4j dashboard map Cypher query using place parameter" width="650">
 </p>
 
 *Use `$place_name` in the map query so the dashboard updates interactively.*
@@ -264,25 +271,25 @@ Use Neo4j's no-code AI agent interface:
 5. Test the agent in the Neo4j website interface.
 
 <p align="center">
-  <img src="images/11-agent-create-with-ai.jpg" alt="Neo4j Create with AI agent form" width="850">
+  <img src="images/11-agent-create-with-ai.jpg" alt="Neo4j Create with AI agent form" width="600">
 </p>
 
 *Create an Aura agent using the graph instance, the embedding model, and a schema-aware prompt.*
 
 <p align="center">
-  <img src="images/12-agent-prompt-example.jpg" alt="Neo4j Graph Agent prompt drafting example" width="950">
+  <img src="images/12-agent-prompt-example.jpg" alt="Neo4j Graph Agent prompt drafting example" width="700">
 </p>
 
 *Use a specific prompt that describes the schema and the expected tasks.*
 
 <p align="center">
-  <img src="images/13-agent-tool-reasoning.jpg" alt="Neo4j Graph Agent tool reasoning example" width="850">
+  <img src="images/13-agent-tool-reasoning.jpg" alt="Neo4j Graph Agent tool reasoning example" width="600">
 </p>
 
 *The agent may select different tools, such as Text2Cypher and user-specific graph queries.*
 
 <p align="center">
-  <img src="images/14-agent-result.jpg" alt="Neo4j Graph Agent final result" width="950">
+  <img src="images/14-agent-result.jpg" alt="Neo4j Graph Agent final result" width="700">
 </p>
 
 *Example output from a graph-aware social-media analytics agent.*
@@ -361,7 +368,8 @@ Upload the following files into `UCGIS2026/images/`:
 
 ## Troubleshooting Checklist
 
-- Confirm that you created an **AuraDB Free** instance rather than the default trial.
+- Skip the default onboarding trial instance after registration.
+- Confirm that you manually created an **AuraDB Free** instance rather than the Professional free trial.
 - Download and save the AuraDB credentials file.
 - Use the exact Colab Secret names listed above.
 - Enable notebook access for each secret.
