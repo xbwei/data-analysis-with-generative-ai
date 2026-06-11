@@ -24,8 +24,9 @@ All workshop activities use free tiers. You do not need to purchase anything or 
 ## Important Free-Tier Notes
 
 - During the workshop, use the provided dataset of **100 synthetic tweets** and run the ETL ingestion step **only once**. Loading substantially more data or rerunning the ingestion unnecessarily may exceed free-tier limits or create duplicate records.
-- Free-tier API calls may occasionally return a temporary **not available** or similar error. Wait a moment and try again.
-- If a free-tier service is temporarily unavailable or you reach a usage limit during the workshop, that is okay. The follow-up tutorials include videos so you can complete the exercises later at your own pace.
+- Please be patient with Gemini. Gemini services have recently shown intermittent availability issues, especially on the free tier. Occasional temporary errors may also occur on paid access.
+- If Gemini returns **not available**, `429`, or a similar temporary error, wait briefly and try again.
+- If you cannot finish every step during the workshop because of a temporary API issue or a free-tier limit, that is okay. The follow-up tutorials include videos so you can complete the exercises later at your own pace.
 - You may continue using the AuraDB Free database, Google Colab, and the Gemini free tier after the workshop, subject to each provider's current free-tier limits and service availability.
 
 ---
@@ -293,27 +294,7 @@ Use Neo4j's no-code AI agent interface:
 
 *Create an Aura agent using the graph instance, the embedding model, and a schema-aware prompt.*
 
-<p align="center">
-  <img src="images/12-agent-prompt-example.jpg" alt="Neo4j Graph Agent prompt drafting example" width="700">
-</p>
-
-*Use a specific prompt that describes the schema and the expected tasks.*
-
-<p align="center">
-  <img src="images/13-agent-tool-reasoning.jpg" alt="Neo4j Graph Agent tool reasoning example" width="600">
-</p>
-
-*The agent may select different tools, such as Text2Cypher and user-specific graph queries.*
-
-<p align="center">
-  <img src="images/14-agent-result.jpg" alt="Neo4j Graph Agent final result" width="700">
-</p>
-
-*Example output from a graph-aware social-media analytics agent.*
-
-> Building, testing, and querying the agent within the Neo4j website interface is free. External deployment, such as an API or MCP server, may require a paid tier.
-
-Use this prompt as a starting point:
+Copy and adapt this prompt when creating the agent:
 
 ```text
 You are a social media analytics assistant working with a Neo4j knowledge graph.
@@ -338,6 +319,20 @@ Ground every answer in retrieved graph data.
 Explain the evidence briefly.
 Do not invent tweets, users, places, hashtags, or metrics that are not present in the graph.
 ```
+
+<p align="center">
+  <img src="images/13-agent-tool-reasoning.jpg" alt="Neo4j Graph Agent tool reasoning example" width="600">
+</p>
+
+*The agent may select different tools, such as Text2Cypher and user-specific graph queries.*
+
+<p align="center">
+  <img src="images/14-agent-result.jpg" alt="Neo4j Graph Agent final result" width="700">
+</p>
+
+*Example output from a graph-aware social-media analytics agent.*
+
+> Building, testing, and querying the agent within the Neo4j website interface is free. External deployment, such as an API or MCP server, may require a paid tier.
 
 Test the agent with:
 
@@ -368,5 +363,5 @@ Which users are most active, and what topics do they discuss?
 - Use the exact Colab Secret names listed above.
 - Enable notebook access for each secret.
 - Run the ETL notebook only once with the provided 100 synthetic tweets.
-- If an API temporarily reports **not available**, wait a moment and try again.
+- Be patient with Gemini. If Gemini temporarily reports **not available**, `429`, or a similar error, wait briefly and try again.
 - Never share or commit API keys and passwords.
