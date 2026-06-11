@@ -177,7 +177,10 @@
       .build-source {
         background: #fff;
         border-top: 7px solid var(--teal);
-        min-height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 320px;
         padding: 0.85rem;
       }
 
@@ -193,6 +196,55 @@
         color: var(--muted);
         font-size: 0.54em;
         margin: 0;
+      }
+
+      .build-visual {
+        align-items: center;
+        display: grid;
+        gap: 0.28rem;
+        margin-top: 0.85rem;
+      }
+
+      .build-visual span,
+      .build-visual strong {
+        border-radius: 999px;
+        font-size: 0.38em;
+        font-weight: 700;
+        padding: 0.22rem 0.34rem;
+        text-align: center;
+      }
+
+      .build-visual span {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        color: var(--muted);
+      }
+
+      .build-visual strong {
+        animation: softPulse 2.8s ease-in-out infinite;
+        background: var(--teal);
+        color: #fff;
+      }
+
+      .agent-visual strong {
+        background: var(--rose);
+      }
+
+      .output-visual strong {
+        background: var(--gold);
+      }
+
+      @keyframes softPulse {
+        0%,
+        100% {
+          box-shadow: 0 0 0 rgba(15, 118, 110, 0);
+          transform: translateY(0);
+        }
+
+        50% {
+          box-shadow: 0 8px 18px rgba(15, 118, 110, 0.18);
+          transform: translateY(-2px);
+        }
       }
 
       .build-arrow {
@@ -347,12 +399,12 @@
         border-radius: 6px;
         box-shadow: 0 8px 18px rgba(15, 23, 42, 0.16);
         display: block;
-        max-height: 292px;
+        max-height: 330px;
         width: 100%;
       }
 
       .video-card.small iframe {
-        max-height: 212px;
+        max-height: 260px;
       }
 
       .harness-videos .video-card {
@@ -365,7 +417,7 @@
       }
 
       .video-card.demo iframe {
-        max-height: 330px;
+        max-height: 390px;
       }
 
       .video-card p {
@@ -546,14 +598,21 @@
       }
 
       .screenshot-card.zoomed {
-        box-shadow: 0 22px 50px rgba(15, 23, 42, 0.28);
+        box-shadow: 0 22px 60px rgba(15, 23, 42, 0.38);
         cursor: zoom-out;
-        transform: scale(1.12);
-        z-index: 20;
+        left: 50%;
+        margin: 0;
+        max-width: 1180px;
+        padding: 0.48rem;
+        position: fixed;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 88vw;
+        z-index: 9999;
       }
 
       .screenshot-card.zoomed img {
-        height: 455px;
+        height: calc(86vh - 76px);
       }
 
       .screenshot-card figcaption {

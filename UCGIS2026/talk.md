@@ -35,12 +35,12 @@ My idea is simple. AI is changing very fast. It is becoming a stronger tool for 
   <div class="stage-card harness">
     <span class="stage-number">3</span>
     <h3>Harness engineering</h3>
-    <p>Agents use tools, skills, MCP, and scale.</p>
+    <p>Agents use tools, skills, and MCP services.</p>
   </div>
 </div>
 
 Note:
-I see the recent development of AI in three broad stages. First, prompt engineering: we learned how to ask better. Second, context engineering: we learned how to give AI the right materials. Third, harness engineering: we give AI tools, MCP services, cloud systems, and scale. This is not a complete history of AI, but it is a useful way to explain how my teaching and research practice has changed.
+I see the recent development of AI in three broad stages. First, prompt engineering: we learned how to ask better. Second, context engineering: we learned how to give AI the right materials. Third, harness engineering: we give AI tools, skills, MCP services, and workflow structure. This is not a complete history of AI, but it is a useful way to explain how my teaching and research practice has changed.
 
 ---
 
@@ -48,18 +48,40 @@ I see the recent development of AI in three broad stages. First, prompt engineer
 
 <div class="build-flow">
   <div class="build-source">
-    <h3>My teaching corpus</h3>
-    <p>Tutorials, YouTube videos, transcripts, notebooks, and related course materials are indexed in a graph database.</p>
+    <div>
+      <h3>My teaching corpus</h3>
+      <p>Tutorials, YouTube videos, transcripts, notebooks, and related course materials are indexed in a graph database.</p>
+    </div>
+    <div class="build-visual corpus-visual">
+      <span>videos</span>
+      <span>transcripts</span>
+      <span>notebooks</span>
+      <strong>graph database</strong>
+    </div>
   </div>
   <div class="build-arrow">-&gt;</div>
   <div class="build-source agent">
-    <h3>AI agent + MCP</h3>
-    <p>Codex uses an MCP server to query that graph and retrieve relevant examples for this talk.</p>
+    <div>
+      <h3>AI agent + MCP</h3>
+      <p>Codex uses an MCP server to query that graph and retrieve relevant examples for this talk.</p>
+    </div>
+    <div class="build-visual agent-visual">
+      <span>Codex</span>
+      <strong>MCP server</strong>
+      <span>graph query</span>
+    </div>
   </div>
   <div class="build-arrow">-&gt;</div>
   <div class="build-source output">
-    <h3>Slide evidence</h3>
-    <p>The retrieved materials help select demo clips and connect them to the prompt, context, and harness story.</p>
+    <div>
+      <h3>Slide evidence</h3>
+      <p>The retrieved materials help select demo clips and connect them to the prompt, context, and harness story.</p>
+    </div>
+    <div class="build-visual output-visual">
+      <span>matched clips</span>
+      <span>examples</span>
+      <strong>slide narrative</strong>
+    </div>
   </div>
 </div>
 
@@ -207,7 +229,7 @@ For GIScience and GeoAI, context is even more important. Spatial questions inclu
       <span>MCP</span>
       <span>tools</span>
       <span>skills</span>
-      <span>scale</span>
+      <span>workflow</span>
     </div>
   </div>
   <div class="video-row two harness-videos">
@@ -300,7 +322,7 @@ This third demo connects AI to data analysis. AI can help move through routine s
     <ul>
       <li>AI can extend human capacity, but it does not have human life.</li>
       <li>AI can produce fluent interaction, but it does not naturally care.</li>
-      <li>Humans care about children, communities, fairness, places, and the future.</li>
+      <li>Humans care about communities, fairness, places, and the future.</li>
       <li>That is why human judgment must stay in the loop.</li>
     </ul>
   </div>
@@ -322,7 +344,7 @@ This third demo connects AI to data analysis. AI can help move through routine s
 </div>
 
 Note:
-This is the most important part for me. AI may become very powerful, but it is still different from humans. Humans have life. Humans have emotion. Humans have self-awareness. We care about the future. We want our children and our communities to live better lives. AI does not naturally care about that. AI can help us, but it should not replace the human role in deciding purpose and value.
+This is the most important part for me. AI may become very powerful, but it is still different from humans. Humans have life. Humans have emotion. Humans have self-awareness. We care about the future, our communities, and the places where people live. AI does not naturally care about that. AI can support our work, but it should not replace the human role in deciding purpose and value.
 
 ---
 
