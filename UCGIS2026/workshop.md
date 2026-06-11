@@ -43,22 +43,10 @@ Bring a laptop with a web browser. No local installation is required. The Python
 
 > The free AuraDB instance is sufficient for this workshop. Do not share your password or commit credentials to GitHub.
 
-The screenshots below show the setup path. Start with the free-instance option, explicitly select the **Free** tier, and confirm that your AuraDB instance is running.
+The screenshot below shows the expected result after creating an AuraDB Free instance:
 
 <p align="center">
-  <img src="https://static.wixstatic.com/media/a30372_752b269b7aeb4f22821f56cbbb649b03~mv2.jpg" alt="Neo4j Aura start with free instance screen" width="650">
-</p>
-
-*Start with a free Neo4j Aura instance. No credit card is required.*
-
-<p align="center">
-  <img src="https://static.wixstatic.com/media/a30372_70f194d6f93b4206b813dc3c3b76f997~mv2.jpg" alt="Neo4j Aura create instance free tier screen" width="950">
-</p>
-
-*Select the **Free** AuraDB tier rather than the default free trial.*
-
-<p align="center">
-  <img src="https://static.wixstatic.com/media/a30372_f92219c4-206f-5792-9ed5-e0e688210489~mv2.jpg" alt="Neo4j Aura running instance screen" width="850">
+  <img src="https://static.wixstatic.com/media/a30372_38df42c3d9f04dfbae310b4695b30af1~mv2.jpg" alt="Neo4j Aura running free instance" width="850">
 </p>
 
 *A successfully created AuraDB Free instance should appear as **RUNNING**.*
@@ -109,10 +97,6 @@ This notebook:
 4. Uses Cypher `UNWIND` to batch-ingest the data.
 5. Creates a connected graph.
 
-The workshop starts with a nested tweet object that includes author, place, entities, and geo information:
-
-![Tweet Object Structure](https://github.com/lbsocial/data-analysis-with-generative-ai/blob/1660b372f63accb8e55ea4b439924ba764639182/image/Gemini_Generated_Image_kcezvkcezvkcezvk.png?raw=true)
-
 The graph schema is:
 
 ```text
@@ -120,10 +104,6 @@ The graph schema is:
 (:Tweet)-[:LOCATED_AT]->(:Place)
 (:Tweet)-[:TAGGED_WITH]->(:Hashtag)
 ```
-
-This is the graph structure that the ETL notebook builds in Neo4j:
-
-![Graph Data Model](https://github.com/lbsocial/data-analysis-with-generative-ai/blob/1660b372f63accb8e55ea4b439924ba764639182/image/Gemini_Generated_Image_vslfdxvslfdxvslf.png?raw=true)
 
 ### Part 2: Explore the Graph and Use AI Query
 
@@ -178,7 +158,7 @@ I want to explore the locations of tweets, popular hashtags, and date.
 Use the **Create with AI** dialog to generate an initial dashboard layout:
 
 <p align="center">
-  <img src="https://static.wixstatic.com/media/a30372_65c05b802c54465e8a7f3da67d51da75~mv2.jpg" alt="Neo4j dashboard create with AI dialog" width="850">
+  <img src="https://static.wixstatic.com/media/a30372_752b269b7aeb4f22821f56cbbb649b03~mv2.jpg" alt="Neo4j dashboard Create with AI dialog" width="850">
 </p>
 
 *Describe the dashboard in plain English and let Neo4j generate an initial layout.*
@@ -216,10 +196,6 @@ Open the GraphRAG notebook:
 
 The notebook uses Gemini's `gemini-embedding-001` model to generate **3072-dimensional** embeddings for tweet text and stores them in Neo4j.
 
-The text-embedding step looks like this conceptually:
-
-![Step 3 Embedding Transformation](https://github.com/lbsocial/data-analysis-with-generative-ai/blob/main/image/step3-embed-to-a-node.png?raw=true)
-
 It creates a vector index similar to:
 
 ```cypher
@@ -239,10 +215,6 @@ The notebook then walks through:
 4. Comparison of traditional RAG and GraphRAG.
 5. Interactive GraphRAG questions.
 
-A key idea in GraphRAG is that retrieval does not stop at the text itself. We expand to connected graph context:
-
-![Step 6 Graph Context Expansion](https://github.com/lbsocial/data-analysis-with-generative-ai/blob/main/image/step6-node-expand.png?raw=true)
-
 Try:
 
 ```text
@@ -254,10 +226,6 @@ What topics does a specific user post about?
 ### Part 5: Cypher-Augmented Generation
 
 Vector search is useful for semantic questions, but it is not the right tool for counts, rankings, or exact filters. The notebook therefore includes Cypher-Augmented Generation: Gemini translates a question into a Neo4j Cypher query and summarizes the results.
-
-This workflow is especially useful for analytical questions:
-
-![Step 10 Cypher-Augmented Generation](https://github.com/lbsocial/data-analysis-with-generative-ai/blob/main/image/step10-llm-generate-cypther.png?raw=true)
 
 Try:
 
@@ -275,10 +243,6 @@ The notebook also combines:
 2. Vector search.
 3. Graph traversal.
 4. Gemini response generation.
-
-The geospatial retrieval step filters graph content by radius before summarization:
-
-![Step 11 Geospatial Radius Filter](https://github.com/lbsocial/data-analysis-with-generative-ai/blob/main/image/step11-geo-query-point.png?raw=true)
 
 Try:
 
@@ -300,7 +264,7 @@ Use Neo4j's no-code AI agent interface:
 The agent-creation dialog lets you choose the instance, embedding model, and system prompt:
 
 <p align="center">
-  <img src="https://static.wixstatic.com/media/a30372_38df42c3d9f04dfbae310b4695b30af1~mv2.jpg" alt="Neo4j Create with AI agent form" width="850">
+  <img src="https://static.wixstatic.com/media/a30372_65c05b802c54465e8a7f3da67d51da75~mv2.jpg" alt="Neo4j Create with AI agent form" width="850">
 </p>
 
 *Create an Aura agent using the graph instance, the embedding model, and a schema-aware prompt.*
@@ -308,7 +272,7 @@ The agent-creation dialog lets you choose the instance, embedding model, and sys
 After testing, the agent can return a grounded analytical summary based on the graph:
 
 <p align="center">
-  <img src="https://static.wixstatic.com/media/a30372_13ffd0c7fe114fb88e418e3f68d2d30f~mv2.jpg" alt="Neo4j Graph Agent final result" width="950">
+  <img src="https://static.wixstatic.com/media/a30372_70f194d6f93b4206b813dc3c3b76f997~mv2.jpg" alt="Neo4j Graph Agent final result" width="950">
 </p>
 
 *Example output from a GraphRAG social-media agent summarizing popular AI-related tweets.*
