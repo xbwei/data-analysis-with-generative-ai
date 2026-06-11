@@ -1,6 +1,6 @@
 <div class="title-grid">
   <div>
-    <p class="eyebrow">UCGIS 2026 Lightning Talk</p>
+    <p class="eyebrow">UCGIS 2026 Presentation</p>
     <h1 class="deck-title">Humans, AI Agents, and Teaching Stacks in GeoAI Education</h1>
     <p class="subtitle">AI is becoming a stronger tool. Humans still give it purpose.</p>
   </div>
@@ -52,35 +52,35 @@ I see the recent development of AI in three broad stages. First, prompt engineer
       <h3>My teaching corpus</h3>
       <p>Tutorials, YouTube videos, transcripts, notebooks, and related course materials are indexed in a graph database.</p>
     </div>
-    <div class="build-visual corpus-visual">
-      <span>videos</span>
-      <span>transcripts</span>
-      <span>notebooks</span>
-      <strong>graph database</strong>
+    <div class="workflow-card corpus-visual">
+      <span class="chip">videos</span>
+      <span class="chip">transcripts</span>
+      <span class="chip">notebooks</span>
+      <span class="database-node">graph database</span>
     </div>
   </div>
-  <div class="build-arrow">-&gt;</div>
+  <div class="build-connector"><span></span></div>
   <div class="build-source agent">
     <div>
       <h3>AI agent + MCP</h3>
       <p>Codex uses an MCP server to query that graph and retrieve relevant examples for this talk.</p>
     </div>
-    <div class="build-visual agent-visual">
-      <span>Codex</span>
-      <strong>MCP server</strong>
-      <span>graph query</span>
+    <div class="workflow-card agent-visual">
+      <span class="agent-node">Codex</span>
+      <span class="mcp-node">MCP server</span>
+      <span class="query-node">graph query</span>
     </div>
   </div>
-  <div class="build-arrow">-&gt;</div>
+  <div class="build-connector"><span></span></div>
   <div class="build-source output">
     <div>
       <h3>Slide evidence</h3>
       <p>The retrieved materials help select demo clips and connect them to the prompt, context, and harness story.</p>
     </div>
-    <div class="build-visual output-visual">
-      <span>matched clips</span>
-      <span>examples</span>
-      <strong>slide narrative</strong>
+    <div class="workflow-card output-visual">
+      <span class="clip-node">matched clips</span>
+      <span class="example-node">examples</span>
+      <span class="deck-node">slide narrative</span>
     </div>
   </div>
 </div>
@@ -430,7 +430,7 @@ Analysis Mode connects the same stack to research and analysis. It can support d
 
 <div class="final-message">
   <ol class="final-points">
-    <li><strong>Extend human capacity.</strong> Use AI to reduce repetitive work and make ambitious teaching and research workflows more feasible.</li>
+    <li><strong>Extend human capacity.</strong> Use AI to reduce repetitive work and make complex teaching and research workflows more feasible.</li>
     <li><strong>Build brain muscle.</strong> Students still need critical thinking, question framing, evidence evaluation, and disciplinary judgment.</li>
     <li><strong>Decide what matters.</strong> AI can expand what we can do; humans must decide the purpose, standards, and consequences.</li>
   </ol>
