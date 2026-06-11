@@ -209,81 +209,69 @@ I call the current stage harness engineering. The model itself is important, but
 
 ---
 
-## A Personal Teaching Stack
+## Demo: Course Assistant
 
-<div class="mode-stack">
-  <div class="mode-card">
-    <h3>Study Mode</h3>
-    <p>AI helps students learn from trusted course materials.</p>
+<div class="demo-slide">
+  <div>
+    <p class="stage-label">Example workflow</p>
+    <ul>
+      <li>A course assistant can answer from trusted teaching materials instead of generic web text.</li>
+      <li>The goal is guided support: students still need to read, compare, and explain.</li>
+      <li>This is one example of context engineering in an educational setting.</li>
+    </ul>
   </div>
-  <div class="mode-card">
-    <h3>Teaching Mode</h3>
-    <p>AI helps instructors draft lessons, labs, quizzes, and videos.</p>
-  </div>
-  <div class="mode-card">
-    <h3>Analysis Mode</h3>
-    <p>AI helps with data analysis, dashboards, and GeoAI workflows.</p>
-  </div>
-</div>
-
-<p class="closing-line">This is a teaching stack, not one chatbot.</p>
-
-Note:
-This is how I connect these ideas to education. In my personal project, I use three modes. Study Mode helps students learn from trusted course material. Teaching Mode helps instructors draft lessons, labs, quizzes, and videos, but the teacher still reviews everything. Analysis Mode helps with data analysis, dashboards, and GeoAI workflows. I see this as a teaching stack, not as one chatbot.
-
----
-
-## Study Mode
-
-<div class="mode-slide">
-  <div class="screenshot-slot">
-    <span>Study Mode screenshot slot</span>
-    <p>Trusted course material, KG retrieval, guided learning</p>
-  </div>
-  <div class="video-card compact">
+  <div class="video-card demo">
     <iframe src="https://www.youtube.com/embed/p0N20TW0dN0?start=0" title="AI teaching assistant tutorial" allowfullscreen></iframe>
-    <p><a href="https://www.youtube.com/watch?v=p0N20TW0dN0&t=0s">Study support</a></p>
+    <p><a href="https://www.youtube.com/watch?v=p0N20TW0dN0&t=0s">Course assistant demo</a></p>
   </div>
 </div>
 
 Note:
-Study Mode is for students. The goal is not just to answer questions, but to help students learn from trusted course materials. This is where context engineering matters.
+This first demo is about student support. The point is not to let AI replace reading or explanation. The point is to connect the assistant to course materials so students receive more grounded support while still doing the intellectual work.
 
 ---
 
-## Teaching Mode
+## Demo: Teaching Preparation
 
-<div class="mode-slide">
-  <div class="screenshot-slot">
-    <span>Teaching Mode screenshot slot</span>
-    <p>Drafting materials with instructor review</p>
+<div class="demo-slide">
+  <div>
+    <p class="stage-label">Example workflow</p>
+    <ul>
+      <li>AI can reduce repetitive preparation work for instructors.</li>
+      <li>It can draft outlines, slides, scripts, short videos, and classroom materials.</li>
+      <li>The instructor still reviews, revises, and decides what is appropriate.</li>
+    </ul>
   </div>
-  <div class="video-card compact">
+  <div class="video-card demo">
     <iframe src="https://www.youtube.com/embed/RDKVcaE52hg?start=31" title="AI teaching video workflow" allowfullscreen></iframe>
-    <p><a href="https://www.youtube.com/watch?v=RDKVcaE52hg&t=31s">Teaching workflow</a></p>
+    <p><a href="https://www.youtube.com/watch?v=RDKVcaE52hg&t=31s">Teaching preparation demo</a></p>
   </div>
 </div>
 
 Note:
-Teaching Mode is for instructors. AI can help draft lesson materials, labs, quizzes, and videos. But the teacher still reviews, edits, and decides what is appropriate.
+This second demo is about teaching preparation. AI can make the preparation process faster, especially when the instructor already knows what they want to teach. The human role is still central: the instructor sets the purpose and checks the quality.
 
 ---
 
-## Analysis Mode
+## Demo: Data Analysis Workflow
 
-<div class="mode-slide">
-  <div class="screenshot-slot">
-    <span>Analysis Mode screenshot slot</span>
-    <p>Data analysis, dashboards, and GeoAI workflows</p>
+<div class="demo-slide">
+  <div>
+    <p class="stage-label">Example workflow</p>
+    <ul>
+      <li>AI can assist with data cleaning, dashboard exploration, and interpretation tasks.</li>
+      <li>For GIScience, the workflow still needs evidence, spatial context, and domain judgment.</li>
+      <li>The value is not automatic insight; it is a more efficient analytical workflow.</li>
+    </ul>
   </div>
-  <div class="video-card compact">
+  <div class="video-card demo">
     <iframe src="https://www.youtube.com/embed/AJLRsjjWWKo?start=42" title="AI analysis dashboard tutorial" allowfullscreen></iframe>
-    <p><a href="https://www.youtube.com/watch?v=AJLRsjjWWKo&t=42s">Analysis workflow</a></p>
+    <p><a href="https://www.youtube.com/watch?v=AJLRsjjWWKo&t=42s">Analysis workflow demo</a></p>
   </div>
 </div>
 
 Note:
-Analysis Mode connects the same idea to research. AI can help with data, dashboards, and GeoAI workflows. This is where agents can become useful, as long as we keep human goals and review in the loop.
+This third demo connects AI to data analysis. AI can help move through routine steps and make analysis more accessible. But especially in GeoAI, the analyst still needs to understand evidence, uncertainty, spatial scale, and the limits of the workflow.
 
 ---
 
@@ -292,9 +280,9 @@ Analysis Mode connects the same idea to research. AI can help with data, dashboa
 <div class="human-ai-layout">
   <div>
     <ul>
-      <li>AI can help us think, but it does not have human life.</li>
-      <li>AI can sound friendly, but it does not naturally care.</li>
-      <li>Humans care about children, communities, fairness, and the future.</li>
+      <li>AI can extend human capacity, but it does not have human life.</li>
+      <li>AI can produce fluent interaction, but it does not naturally care.</li>
+      <li>Humans care about children, communities, fairness, places, and the future.</li>
       <li>That is why human judgment must stay in the loop.</li>
     </ul>
   </div>
@@ -320,6 +308,84 @@ This is the most important part for me. AI may become very powerful, but it is s
 
 ---
 
+## A Personal Teaching Stack
+
+<div class="mode-stack">
+  <div class="mode-card">
+    <h3>Study Mode</h3>
+    <p>Grounded support for students working through course materials.</p>
+  </div>
+  <div class="mode-card">
+    <h3>Teaching Mode</h3>
+    <p>Instructor-facing support for preparing and revising teaching assets.</p>
+  </div>
+  <div class="mode-card">
+    <h3>Analysis Mode</h3>
+    <p>Research-facing support for data, dashboards, and GeoAI workflows.</p>
+  </div>
+</div>
+
+<p class="closing-line">This is a teaching stack, not one chatbot.</p>
+
+Note:
+After the demos and the human-centered question, this is the practical structure I am building. I organize the system into three modes: Study Mode for students, Teaching Mode for instructors, and Analysis Mode for research and analytical work. These modes are connected, but they serve different users and different responsibilities.
+
+---
+
+## Study Mode
+
+<div class="screenshot-grid">
+  <figure class="screenshot-card">
+    <img src="images/study-1.png" alt="Study Mode interface screenshot 1">
+    <figcaption>Course-grounded learning support</figcaption>
+  </figure>
+  <figure class="screenshot-card">
+    <img src="images/study-2.png" alt="Study Mode interface screenshot 2">
+    <figcaption>Student questions connected to trusted materials</figcaption>
+  </figure>
+</div>
+
+Note:
+Study Mode is for students. It should help them work with trusted course material, not bypass the learning process. The design goal is grounded support that encourages students to read, ask better questions, and explain their reasoning.
+
+---
+
+## Teaching Mode
+
+<div class="screenshot-grid">
+  <figure class="screenshot-card">
+    <img src="images/teaching-1.png" alt="Teaching Mode interface screenshot 1">
+    <figcaption>Instructor workflow support</figcaption>
+  </figure>
+  <figure class="screenshot-card">
+    <img src="images/teaching-2.png" alt="Teaching Mode interface screenshot 2">
+    <figcaption>Drafting materials with human review</figcaption>
+  </figure>
+</div>
+
+Note:
+Teaching Mode is for instructors. It can support the preparation of lessons, labs, quizzes, and media, but the instructor remains responsible for the final teaching decision. This is where efficiency and professional judgment need to work together.
+
+---
+
+## Analysis Mode
+
+<div class="screenshot-grid">
+  <figure class="screenshot-card">
+    <img src="images/analysi-1.png" alt="Analysis Mode interface screenshot 1">
+    <figcaption>Research and data workflow support</figcaption>
+  </figure>
+  <figure class="screenshot-card">
+    <img src="images/analysis-2.png" alt="Analysis Mode interface screenshot 2">
+    <figcaption>Dashboards, evidence, and GeoAI analysis</figcaption>
+  </figure>
+</div>
+
+Note:
+Analysis Mode connects the same stack to research and analysis. It can support data exploration, dashboards, and GeoAI workflows. The analyst still needs to decide what question matters, what evidence is credible, and how to interpret the result.
+
+---
+
 ## What This Means for GIScience and GeoAI
 
 <div class="final-grid">
@@ -338,12 +404,12 @@ This is the most important part for me. AI may become very powerful, but it is s
 </div>
 
 <ol class="final-points">
-  <li>Use AI so people can do more meaningful work in less time.</li>
+  <li>Use AI to extend human capacity and reduce repetitive work.</li>
   <li>Teach students to build critical thinking and exercise their brain muscle.</li>
   <li>Keep humans as the question askers, because humans care about the world.</li>
 </ol>
 
-<p class="closing-line">AI can help us do more. Humans must decide what matters.</p>
+<p class="closing-line">AI can expand what we can do. Humans must decide what matters.</p>
 
 Note:
-My suggestion is practical. I am building Study Mode, Teaching Mode, and Analysis Mode because I think AI can help us learn, teach, and do research. AI can help fewer people do more work in less time. But this does not mean students should think less. They need to build critical thinking. They need to exercise their brain muscle. And humans are still the question askers, because humans have life and humans care about the world.
+My suggestion is practical. I am building Study Mode, Teaching Mode, and Analysis Mode because AI can support learning, teaching, and research workflows. It can help fewer people accomplish more meaningful work in less time. But this does not mean students should think less. They need to build critical thinking and exercise their brain muscle. Humans are still the question askers, because humans have life and humans care about the world.
