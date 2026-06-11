@@ -2,12 +2,22 @@
 
 ## Advancing Social Media Analytics in Neo4j: Multimodal Embeddings and AI Agents with Knowledge Graphs
 
-**Instructor:** Dr. Xuebin Wei, James Madison University  
+**Instructor:** [Dr. Xuebin Wei](https://www.jmu.edu/cise/people/faculty/wei-xuebin.shtml), James Madison University  
 **Official workshop description:** [UCGIS 2026 Sched page](https://ucgissymposium2026.sched.com/event/2KN6D/advancing-social-media-analytics-in-neo4j-multimodal-embeddings-and-ai-agents-with-knowledge-graphs)
 
 Welcome! In this hands-on workshop, you will build a social media knowledge graph in Neo4j, explore it with natural-language queries, create text embeddings, run a Python GraphRAG workflow, and configure a free Neo4j Graph Agent.
 
 > **Scope note:** The official title includes multimodal embeddings. During the live workshop, we will focus on **text embeddings** and **text-based GraphRAG** so that participants can complete the full workflow. A text-image embedding tutorial is included as an optional extension.
+
+---
+
+## Before the Workshop
+
+Please bring a laptop with a web browser. No local installation is required because the Python exercises run in Google Colab.
+
+Please also have access to a Gmail account. You may use an existing Gmail account or create a new one for the workshop.
+
+All workshop activities use free tiers. You do not need to purchase anything or provide a credit card.
 
 ---
 
@@ -26,9 +36,7 @@ By the end of the workshop, you will have:
 
 ---
 
-## Before the Workshop
-
-Bring a laptop with a web browser. No local installation is required. The Python exercises run in Google Colab.
+## Account Setup
 
 ### Step 0A: Create a Free Neo4j AuraDB Instance
 
