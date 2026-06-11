@@ -651,6 +651,8 @@
       .mode-card {
         background: var(--panel);
         border-top: 7px solid var(--teal);
+        display: flex;
+        flex-direction: column;
         min-height: 185px;
         padding: 0.8rem;
       }
@@ -863,6 +865,82 @@
         font-size: 0.86em;
         font-weight: 700;
         margin-top: 0.85rem;
+        text-align: center;
+      }
+
+      .stage-label-text {
+        color: var(--teal);
+        font-size: 0.68em;
+        font-weight: 700;
+        margin: 0 0 0.15em;
+      }
+
+      .harness-question {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-left: 5px solid var(--teal);
+        border-radius: 8px;
+        margin-top: 0.55rem;
+        padding: 0.45rem 0.65rem;
+      }
+
+      .harness-question .question-lead {
+        color: var(--muted);
+        font-size: 0.5em;
+        font-weight: 400;
+        margin: 0 0 0.1em;
+      }
+
+      .harness-question .question-text {
+        color: var(--ink);
+        font-size: 0.72em;
+        font-weight: 700;
+        margin: 0 0 0.35em;
+      }
+
+      .harness-question .question-text.emphasis {
+        color: var(--teal);
+        font-size: 0.82em;
+        margin: 0;
+      }
+
+      .geo-example {
+        color: var(--ink);
+        display: block;
+        font-size: 0.88em;
+        font-weight: 400;
+        margin-top: 0.15rem;
+      }
+
+      .workflow-steps {
+        border-top: 1px solid var(--line);
+        color: var(--teal);
+        font-size: 0.52em;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        margin-top: auto;
+        padding-top: 0.45rem;
+      }
+
+      .callout {
+        background: rgba(255, 255, 255, 0.92);
+        border: 2px solid var(--teal);
+        border-radius: 5px;
+        color: var(--ink);
+        font-size: 0.38em;
+        font-weight: 700;
+        padding: 0.18rem 0.4rem;
+        pointer-events: none;
+        position: absolute;
+        white-space: nowrap;
+        z-index: 10;
+      }
+
+      .video-evidence {
+        color: var(--teal);
+        font-size: 0.36em;
+        font-style: italic;
+        margin: 0.1rem 0 0;
         text-align: center;
       }
 

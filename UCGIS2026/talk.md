@@ -17,30 +17,33 @@ My idea is simple. AI is changing very fast. It is becoming a stronger tool for 
 
 ---
 
-## AI: Three Stages
+## AI: Three Shifts
 
 <div class="stage-overview">
   <div class="stage-card prompt">
     <span class="stage-number">1</span>
     <h3>Prompt engineering</h3>
-    <p>Human and model talk directly.</p>
+    <p class="stage-label-text">Better instructions</p>
+    <p>Guide models with clearer instructions.</p>
   </div>
   <div class="stage-arrow">-&gt;</div>
   <div class="stage-card context">
     <span class="stage-number">2</span>
     <h3>Context engineering</h3>
-    <p>The model receives trusted materials.</p>
+    <p class="stage-label-text">Better grounding</p>
+    <p>Connect models to trusted data and evidence.</p>
   </div>
   <div class="stage-arrow">-&gt;</div>
   <div class="stage-card harness">
     <span class="stage-number">3</span>
     <h3>Harness engineering</h3>
-    <p>Agents use tools, skills, and MCP services.</p>
+    <p class="stage-label-text">Better systems</p>
+    <p>Equip agents with tools and workflows.</p>
   </div>
 </div>
 
 Note:
-I see the recent development of AI in three broad stages. First, prompt engineering: we learned how to ask better. Second, context engineering: we learned how to give AI the right materials. Third, harness engineering: we give AI tools, skills, MCP services, and workflow structure. This is not a complete history of AI, but it is a useful way to explain how my teaching and research practice has changed.
+I see the recent development of AI in three broad shifts. First, prompt engineering: we learned how to ask better. Second, context engineering: we learned how to give AI the right materials. Third, harness engineering: we give AI tools, skills, MCP services, and workflow structure. This is not a complete history of AI, but it is a useful way to explain how my teaching and research practice has changed.
 
 ---
 
@@ -98,9 +101,9 @@ I also want to explain how this deck was built. I have a graph database that sto
   <div>
     <p class="stage-label">Stage 1</p>
     <ul>
-      <li>At the beginning, we learned to control LLMs with better prompts.</li>
-      <li>We used examples, formats, and clear instructions.</li>
-      <li>The model mostly worked inside the conversation.</li>
+      <li>We first learned to guide LLMs with better prompts.</li>
+      <li>Examples, formats, and clear instructions improved the output.</li>
+      <li>The model still worked mostly inside the conversation.</li>
     </ul>
     <div class="prompt-diagram">
       <div class="person-dot">Human</div>
@@ -115,6 +118,7 @@ I also want to explain how this deck was built. I have a graph database that sto
   <div class="video-card compact">
     <iframe src="https://www.youtube.com/embed/fdg0Zo7Wj5M?start=745" title="Prompt engineering tutorial" allowfullscreen></iframe>
     <p><a href="https://www.youtube.com/watch?v=fdg0Zo7Wj5M&t=745s">Prompt engineering example</a></p>
+    <p class="video-evidence">Retrieved from the teaching corpus at the relevant timestamp</p>
   </div>
 </div>
 
@@ -129,9 +133,9 @@ The first stage I taught was prompt engineering. We learned that if we give exam
   <div>
     <p class="stage-label">A stronger model core</p>
     <ul>
-      <li>Models became better at multi-step thinking.</li>
-      <li>They can compare different paths before giving an answer.</li>
-      <li>This makes them more useful for data analysis and research tasks.</li>
+      <li>Models became better at multi-step reasoning.</li>
+      <li>They became more useful for complex analytical and research tasks.</li>
+      <li>Stronger reasoning helped, but trusted evidence was still necessary.</li>
     </ul>
     <div class="reasoning-diagram">
       <div>question</div>
@@ -160,9 +164,9 @@ The next stage is reasoning models. In my tutorial, I explained that reasoning m
   <div>
     <p class="stage-label">Stage 2</p>
     <ul>
-      <li>Prompting is not enough when the task needs trusted knowledge.</li>
+      <li>Prompting is not enough when the task requires trusted knowledge.</li>
       <li>Context engineering gives AI the right documents, data, memory, and evidence.</li>
-      <li>RAG, embeddings, and knowledge graphs help AI use the right material.</li>
+      <li>RAG, embeddings, and knowledge graphs help AI retrieve and use the right materials.</li>
     </ul>
     <div class="context-diagram">
       <div class="source-stack">
@@ -197,10 +201,10 @@ After prompt engineering, I think the next important idea is context engineering
       <li>GraphRAG can connect language, graph structure, and geographic evidence.</li>
     </ul>
     <div class="geo-diagram">
-      <span class="map-tile">place</span>
-      <span class="map-tile">relation</span>
-      <span class="map-tile">scale</span>
-      <span class="map-tile">evidence</span>
+      <span class="map-tile">place<br><span class="geo-example">Fairfax County</span></span>
+      <span class="map-tile">relation<br><span class="geo-example">Connected entities</span></span>
+      <span class="map-tile">scale<br><span class="geo-example">National → Local</span></span>
+      <span class="map-tile">evidence<br><span class="geo-example">Trusted sources</span></span>
     </div>
   </div>
   <div class="video-card compact">
@@ -222,7 +226,6 @@ For GIScience and GeoAI, context is even more important. Spatial questions inclu
     <ul>
       <li>Now we are moving toward agents with tools.</li>
       <li>Agents can use MCP services, data, skills, and cloud systems.</li>
-      <li>The key question becomes: what should we let the agent do?</li>
     </ul>
     <div class="harness-diagram">
       <div class="agent-core">AI agent</div>
@@ -230,6 +233,12 @@ For GIScience and GeoAI, context is even more important. Spatial questions inclu
       <span>tools</span>
       <span>skills</span>
       <span>workflow</span>
+    </div>
+    <div class="harness-question">
+      <p class="question-lead">The question is no longer only:</p>
+      <p class="question-text">What should we ask?</p>
+      <p class="question-lead">It is also:</p>
+      <p class="question-text emphasis">What should we let the agent do?</p>
     </div>
   </div>
   <div class="video-row two harness-videos">
@@ -255,7 +264,7 @@ I call the current stage harness engineering. The model itself is important, but
   <div>
     <p class="stage-label">Example workflow</p>
     <ul>
-      <li>A course assistant can answer from trusted teaching materials instead of generic web text.</li>
+      <li>A course assistant can answer from trusted teaching materials instead of generic web content.</li>
       <li>The goal is guided support: students still need to read, compare, and explain.</li>
       <li>This is one example of context engineering in an educational setting.</li>
     </ul>
@@ -320,10 +329,10 @@ This third demo connects AI to data analysis. AI can help move through routine s
 <div class="human-ai-layout">
   <div>
     <ul>
-      <li>AI can extend human capacity, but it does not have human life.</li>
+      <li>AI can extend human capacity, but it does not have lived experience.</li>
       <li>AI can produce fluent interaction, but it does not naturally care.</li>
       <li>Humans care about communities, fairness, places, and the future.</li>
-      <li>That is why human judgment must stay in the loop.</li>
+      <li>That is why human judgment must remain in the loop.</li>
     </ul>
   </div>
   <div class="human-ai-diagram">
@@ -354,14 +363,17 @@ This is the most important part for me. AI may become very powerful, but it is s
   <div class="mode-card">
     <h3>Study Mode</h3>
     <p>Grounded support for students working through course materials.</p>
+    <p class="workflow-steps">retrieve → guide → practice</p>
   </div>
   <div class="mode-card">
     <h3>Teaching Mode</h3>
     <p>Instructor-facing support for preparing and revising teaching assets.</p>
+    <p class="workflow-steps">draft → review → publish</p>
   </div>
   <div class="mode-card">
     <h3>Analysis Mode</h3>
     <p>Research-facing support for data, dashboards, and GeoAI workflows.</p>
+    <p class="workflow-steps">fetch → validate → interpret</p>
   </div>
 </div>
 
@@ -377,10 +389,13 @@ After the demos and the human-centered question, this is the practical structure
 <div class="screenshot-grid">
   <figure class="screenshot-card zoomable">
     <img src="images/study-1.png" alt="Study Mode interface screenshot 1">
+    <span class="callout" style="top: 38%; right: 4%;">Grounded response</span>
+    <span class="callout" style="bottom: 18%; left: 6%;">Tutorial evidence</span>
     <figcaption>Course-grounded learning support</figcaption>
   </figure>
   <figure class="screenshot-card zoomable">
     <img src="images/study-2.png" alt="Study Mode interface screenshot 2">
+    <span class="callout" style="top: 8%; right: 4%;">Practice guidance</span>
     <figcaption>Student questions connected to trusted materials</figcaption>
   </figure>
 </div>
@@ -395,10 +410,14 @@ Study Mode is for students. It should help them work with trusted course materia
 <div class="screenshot-grid">
   <figure class="screenshot-card zoomable">
     <img src="images/teaching-1.png" alt="Teaching Mode interface screenshot 1">
+    <span class="callout" style="top: 55%; left: 4%;">Notes</span>
+    <span class="callout" style="bottom: 12%; left: 4%;">Lab</span>
     <figcaption>Instructor workflow support</figcaption>
   </figure>
   <figure class="screenshot-card zoomable">
     <img src="images/teaching-2.png" alt="Teaching Mode interface screenshot 2">
+    <span class="callout" style="top: 8%; right: 4%;">Quiz</span>
+    <span class="callout" style="bottom: 18%; right: 4%;">Instructor review</span>
     <figcaption>Drafting materials with human review</figcaption>
   </figure>
 </div>
@@ -413,10 +432,13 @@ Teaching Mode is for instructors. It can support the preparation of lessons, lab
 <div class="screenshot-grid">
   <figure class="screenshot-card zoomable">
     <img src="images/analysi-1.png" alt="Analysis Mode interface screenshot 1">
+    <span class="callout" style="top: 6%; left: 4%;">National snapshot</span>
+    <span class="callout" style="top: 38%; left: 4%;">Source-aware interpretation</span>
     <figcaption>Research and data workflow support</figcaption>
   </figure>
   <figure class="screenshot-card zoomable">
     <img src="images/analysis-2.png" alt="Analysis Mode interface screenshot 2">
+    <span class="callout" style="top: 6%; left: 4%;">Regional lens</span>
     <figcaption>Dashboards, evidence, and GeoAI analysis</figcaption>
   </figure>
 </div>
