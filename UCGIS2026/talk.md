@@ -349,38 +349,6 @@ This second demo is about teaching preparation. AI can make the preparation proc
 Note:
 This third demo connects AI to data analysis. AI can help move through routine steps and make analysis more accessible. But especially in GeoAI, the analyst still needs to understand evidence, uncertainty, spatial scale, and the limits of the workflow.
 
----
-
-## What AI Still Does Not Have
-
-<div class="human-ai-layout">
-  <div>
-    <ul>
-      <li>AI can extend human capacity, but it does not have lived experience.</li>
-      <li>AI can produce fluent interaction, but it does not naturally care.</li>
-      <li>Humans care about communities, fairness, places, and the future.</li>
-      <li>That is why human judgment must remain in the loop.</li>
-    </ul>
-  </div>
-  <div class="human-ai-diagram">
-    <div class="ai-side">
-      <h3>AI</h3>
-      <p>speed</p>
-      <p>scale</p>
-      <p>memory</p>
-    </div>
-    <div class="bridge">supports</div>
-    <div class="human-side">
-      <h3>Human</h3>
-      <p>purpose</p>
-      <p>care</p>
-      <p>judgment</p>
-    </div>
-  </div>
-</div>
-
-Note:
-This is the most important part for me. AI may become very powerful, but it is still different from humans. Humans have life. Humans have emotion. Humans have self-awareness. We care about the future, our communities, and the places where people live. AI does not naturally care about that. AI can support our work, but it should not replace the human role in deciding purpose and value.
 
 ---
 
@@ -413,17 +381,17 @@ After the demos and the human-centered question, this is the practical structure
 
 ## Study Mode
 
-<div class="screenshot-grid">
+<div class="slide-grid">
+  <div>
+    <p class="stage-label">Interactive features</p>
+    <ul>
+      <li><strong>Voice feature</strong>: Engage in conversational learning.</li>
+      <li><strong>Customize learning path</strong>: Adapt the materials based on individual progress.</li>
+    </ul>
+  </div>
   <figure class="screenshot-card zoomable">
-    <img src="images/study-1.png" alt="Study Mode interface screenshot 1">
-    <span class="callout" style="top: 38%; right: 4%;">Grounded response</span>
-    <span class="callout" style="bottom: 18%; left: 6%;">Tutorial evidence</span>
-    <figcaption>Course-grounded learning support</figcaption>
-  </figure>
-  <figure class="screenshot-card zoomable">
-    <img src="images/study-2.png" alt="Study Mode interface screenshot 2">
-    <span class="callout" style="top: 8%; right: 4%;">Practice guidance</span>
-    <figcaption>Student questions connected to trusted materials</figcaption>
+    <img src="images/study-mode-gif.gif" alt="Study Mode animation">
+    <figcaption>Interactive learning and voice support</figcaption>
   </figure>
 </div>
 
@@ -472,6 +440,39 @@ Teaching Mode is for instructors. It can support the preparation of lessons, lab
 
 Note:
 Analysis Mode connects the same stack to research and analysis. It can support data exploration, dashboards, and GeoAI workflows. The analyst still needs to decide what question matters, what evidence is credible, and how to interpret the result.
+
+---
+
+## What AI Still Does Not Have
+
+<div class="human-ai-layout">
+  <div>
+    <ul>
+      <li>AI can extend human capacity, but it does not have lived experience.</li>
+      <li>AI can produce fluent interaction, but it does not naturally care.</li>
+      <li>Humans care about communities, fairness, places, and the future.</li>
+      <li>That is why human judgment must remain in the loop.</li>
+    </ul>
+  </div>
+  <div class="human-ai-diagram">
+    <div class="ai-side">
+      <h3>AI</h3>
+      <p>speed</p>
+      <p>scale</p>
+      <p>memory</p>
+    </div>
+    <div class="bridge">supports</div>
+    <div class="human-side">
+      <h3>Human</h3>
+      <p>purpose</p>
+      <p>care</p>
+      <p>judgment</p>
+    </div>
+  </div>
+</div>
+
+Note:
+This is the most important part for me. AI may become very powerful, but it is still different from humans. Humans have life. Humans have emotion. Humans have self-awareness. We care about the future, our communities, and the places where people live. AI does not naturally care about that. AI can support our work, but it should not replace the human role in deciding purpose and value.
 
 ---
 
