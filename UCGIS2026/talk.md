@@ -47,7 +47,7 @@ I see the recent development of AI in three broad shifts. First, prompt engineer
 
 ---
 
-## Teaching Knowledge Base
+## Teaching Knowledge Database
 
 <div class="slide-grid">
   <div>
@@ -71,17 +71,47 @@ Before talking about how the deck was built, let's look at the knowledge base. A
 ## How This Deck Was Built
 
 <div class="video-row three harness-videos">
-  <div class="video-card small">
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE_1" title="Graph KG Network Demo" allowfullscreen></iframe>
-    <p>Graph KG Network Demo</p>
+  <div class="video-card small" style="min-height: 220px; display: flex; flex-direction: column;">
+    <div style="flex-grow: 1; border-radius: 6px; background: #f8fafc; overflow: hidden; border: 1px solid var(--line);">
+      <div class="mini-network">
+        <div class="node-sat n1">Vid</div>
+        <div class="node-sat n2">Doc</div>
+        <div class="node-sat n3">Lab</div>
+        <div class="node-sat n4">Quiz</div>
+        <div class="node-core">KG</div>
+      </div>
+    </div>
+    <p style="margin-top: 0.6rem; font-weight: 700; color: var(--ink);">Graph KG Network Demo</p>
   </div>
-  <div class="video-card small">
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE_2" title="Agent MCP Slide Demo" allowfullscreen></iframe>
-    <p>Agent MCP Slide Generation</p>
+  <div class="video-card small" style="min-height: 220px; display: flex; flex-direction: column;">
+    <div style="flex-grow: 1; border-radius: 6px; background: #f8fafc; overflow: hidden; border: 1px solid var(--line);">
+      <div class="mini-mcp">
+        <div class="agent-node" style="padding: 0.4rem; border-radius: 50%; font-size: 0.4em;">Agent</div>
+        <div style="position: relative; width: 50px; height: 2px; background: var(--line);">
+           <div class="data-packet" style="position: absolute; top: -5px; left: 50%;"></div>
+        </div>
+        <div class="mcp-node" style="padding: 0.4rem; border-radius: 8px; font-size: 0.4em;">MCP</div>
+      </div>
+    </div>
+    <p style="margin-top: 0.6rem; font-weight: 700; color: var(--ink);">Agent MCP Slide Generation</p>
   </div>
-  <div class="video-card small">
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE_3" title="Multiple Video Match Demo" allowfullscreen></iframe>
-    <p>Multiple Video Match</p>
+  <div class="video-card small" style="min-height: 220px; display: flex; flex-direction: column;">
+    <div style="flex-grow: 1; border-radius: 6px; background: #f8fafc; overflow: hidden; border: 1px solid var(--line);">
+      <div class="mini-match">
+        <div class="video-track">
+          <div class="video-segment bg"></div>
+          <div class="video-segment hl"></div>
+          <div class="video-segment bg"></div>
+        </div>
+        <div class="video-track">
+          <div class="video-segment bg"></div>
+          <div class="video-segment hl2"></div>
+        </div>
+        <div style="font-size: 0.6em; color: var(--gold); margin-top: 0.2rem;">⬇</div>
+        <div class="deck-node" style="padding: 0.2rem 0.5rem; font-size: 0.35em; border-radius: 4px;">Slide Narrative</div>
+      </div>
+    </div>
+    <p style="margin-top: 0.6rem; font-weight: 700; color: var(--ink);">Multiple Video Match</p>
   </div>
 </div>
 
