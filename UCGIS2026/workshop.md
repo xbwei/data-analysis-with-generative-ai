@@ -146,7 +146,7 @@ After the ETL notebook completes:
 Try:
 
 ```text
-Show me all users in New York.
+Show me all users in New York, NY.
 Find the users who posted tweets containing the hashtag AI.
 Which hashtags appear most frequently?
 Which users posted the most tweets?
