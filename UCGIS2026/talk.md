@@ -71,47 +71,65 @@ Before talking about how the deck was built, let's look at the knowledge base. A
 ## How This Deck Was Built
 
 <div class="video-row three harness-videos">
-  <div class="video-card small" style="min-height: 220px; display: flex; flex-direction: column;">
-    <div style="flex-grow: 1; border-radius: 6px; background: #f8fafc; overflow: hidden; border: 1px solid var(--line);">
-      <div class="mini-network">
-        <div class="node-sat n1">Vid</div>
-        <div class="node-sat n2">Doc</div>
-        <div class="node-sat n3">Lab</div>
-        <div class="node-sat n4">Quiz</div>
-        <div class="node-core">KG</div>
+  <div class="video-card small premium-container">
+    <div class="premium-stack-card">
+      <div class="premium-network">
+        <div class="kg-grid"></div>
+        <div class="kg-node core">KG</div>
+        <div class="kg-node sat n1">Concept</div>
+        <div class="kg-node sat n2">Place</div>
+        <div class="kg-node sat n3">Event</div>
+        <div class="kg-node sat n4">Person</div>
+        <svg class="kg-lines" viewBox="0 0 100 100">
+          <line x1="50" y1="50" x2="20" y2="20"></line>
+          <line x1="50" y1="50" x2="80" y2="30"></line>
+          <line x1="50" y1="50" x2="25" y2="80"></line>
+          <line x1="50" y1="50" x2="75" y2="70"></line>
+          <line x1="20" y1="20" x2="80" y2="30" class="sec-line"></line>
+          <line x1="25" y1="80" x2="75" y2="70" class="sec-line"></line>
+        </svg>
       </div>
     </div>
-    <p style="margin-top: 0.6rem; font-weight: 700; color: var(--ink);">Graph KG Network Demo</p>
+    <p class="premium-caption">Knowledge Graph Network</p>
   </div>
-  <div class="video-card small" style="min-height: 220px; display: flex; flex-direction: column;">
-    <div style="flex-grow: 1; border-radius: 6px; background: #f8fafc; overflow: hidden; border: 1px solid var(--line);">
-      <div class="mini-mcp">
-        <div class="agent-node" style="padding: 0.4rem; border-radius: 50%; font-size: 0.4em;">Agent</div>
-        <div style="position: relative; width: 50px; height: 2px; background: var(--line);">
-           <div class="data-packet" style="position: absolute; top: -5px; left: 50%;"></div>
+  <div class="video-card small premium-container">
+    <div class="premium-stack-card">
+      <div class="premium-mcp">
+        <div class="mcp-agent">Agent</div>
+        <div class="mcp-flow">
+          <div class="mcp-server">MCP</div>
+          <div class="mcp-packet p1"></div>
         </div>
-        <div class="mcp-node" style="padding: 0.4rem; border-radius: 8px; font-size: 0.4em;">MCP</div>
+        <div class="mcp-tools">
+          <div class="mcp-tool">DB</div>
+          <div class="mcp-tool">API</div>
+        </div>
       </div>
     </div>
-    <p style="margin-top: 0.6rem; font-weight: 700; color: var(--ink);">Agent MCP Slide Generation</p>
+    <p class="premium-caption">Agent Tool Use (MCP)</p>
   </div>
-  <div class="video-card small" style="min-height: 220px; display: flex; flex-direction: column;">
-    <div style="flex-grow: 1; border-radius: 6px; background: #f8fafc; overflow: hidden; border: 1px solid var(--line);">
-      <div class="mini-match">
-        <div class="video-track">
-          <div class="video-segment bg"></div>
-          <div class="video-segment hl"></div>
-          <div class="video-segment bg"></div>
+  <div class="video-card small premium-container">
+    <div class="premium-stack-card">
+      <div class="premium-match">
+        <div class="yt-mock">
+          <div class="yt-play">▶</div>
+          <div class="yt-bar">
+            <div class="yt-progress"></div>
+            <div class="yt-hl hl1"></div>
+            <div class="yt-hl hl2"></div>
+          </div>
         </div>
-        <div class="video-track">
-          <div class="video-segment bg"></div>
-          <div class="video-segment hl2"></div>
+        <div class="match-arrows">
+          <div class="m-arrow">↓</div>
+          <div class="m-arrow">↓</div>
         </div>
-        <div style="font-size: 0.6em; color: var(--gold); margin-top: 0.2rem;">⬇</div>
-        <div class="deck-node" style="padding: 0.2rem 0.5rem; font-size: 0.35em; border-radius: 4px;">Slide Narrative</div>
+        <div class="slide-mock">
+          <div class="s-title"></div>
+          <div class="s-body"></div>
+        </div>
       </div>
     </div>
-    <p style="margin-top: 0.6rem; font-weight: 700; color: var(--ink);">Multiple Video Match</p>
+    <p class="premium-caption">YouTube to Slide Synthesis</p>
   </div>
 </div>
 
