@@ -47,51 +47,48 @@ I see the recent development of AI in three broad shifts. First, prompt engineer
 
 ---
 
+## Teaching Knowledge Base
+
+<div class="slide-grid">
+  <div>
+    <p class="stage-label">Knowledge Base Dashboard</p>
+    <ul>
+      <li>All course materials, videos, and tutorials are organized into a knowledge base.</li>
+      <li>This provides a trusted foundation for AI applications.</li>
+    </ul>
+  </div>
+  <figure class="screenshot-card zoomable">
+    <img src="images/kb-dashboard.png" alt="Knowledge Base Dashboard">
+    <figcaption>Knowledge Base Dashboard</figcaption>
+  </figure>
+</div>
+
+Note:
+Before talking about how the deck was built, let's look at the knowledge base. All my course materials, videos, and tutorials are organized into a graph-based knowledge base. This provides a trusted foundation for any AI applications we build.
+
+---
+
 ## How This Deck Was Built
 
-<div class="build-flow">
-  <div class="build-source">
-    <div>
-      <h3>My teaching corpus</h3>
-      <p>Tutorials, YouTube videos, transcripts, notebooks, and related course materials are indexed in a graph database.</p>
-    </div>
-    <div class="workflow-card corpus-visual">
-      <span class="chip">videos</span>
-      <span class="chip">transcripts</span>
-      <span class="chip">notebooks</span>
-      <span class="database-node">graph database</span>
-    </div>
+<div class="video-row three harness-videos">
+  <div class="video-card small">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE_1" title="Graph KG Network Demo" allowfullscreen></iframe>
+    <p>Graph KG Network Demo</p>
   </div>
-  <div class="build-connector"><span></span></div>
-  <div class="build-source agent">
-    <div>
-      <h3>AI agent + MCP</h3>
-      <p>Codex uses an MCP server to query that graph and retrieve relevant examples for this talk.</p>
-    </div>
-    <div class="workflow-card agent-visual">
-      <span class="agent-node">Codex</span>
-      <span class="mcp-node">MCP server</span>
-      <span class="query-node">graph query</span>
-    </div>
+  <div class="video-card small">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE_2" title="Agent MCP Slide Demo" allowfullscreen></iframe>
+    <p>Agent MCP Slide Generation</p>
   </div>
-  <div class="build-connector"><span></span></div>
-  <div class="build-source output">
-    <div>
-      <h3>Slide evidence</h3>
-      <p>The retrieved materials help select demo clips and connect them to the prompt, context, and harness story.</p>
-    </div>
-    <div class="workflow-card output-visual">
-      <span class="clip-node">matched clips</span>
-      <span class="example-node">examples</span>
-      <span class="deck-node">slide narrative</span>
-    </div>
+  <div class="video-card small">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE_3" title="Multiple Video Match Demo" allowfullscreen></iframe>
+    <p>Multiple Video Match</p>
   </div>
 </div>
 
 <p class="build-caption">The deck is also a small example of harness engineering: an agent using tools and my own knowledge base to support presentation design.</p>
 
 Note:
-I also want to explain how this deck was built. I have a graph database that stores my tutorials, videos, transcripts, notebooks, and related teaching materials. Instead of searching manually through everything, I used an AI agent, Codex, connected through an MCP server, to query that knowledge graph. It helped retrieve relevant previous teaching examples and video clips. So the deck itself is a small example of the workflow I am describing.
+I also want to explain how this deck was built. I have a graph database that stores my tutorials, videos, transcripts, notebooks, and related teaching materials. Instead of searching manually through everything, I used an AI agent connected through an MCP server to query that knowledge graph. It helped retrieve relevant previous teaching examples and video clips. So the deck itself is a small example of the workflow I am describing.
 
 ---
 
