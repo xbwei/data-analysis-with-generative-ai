@@ -385,9 +385,14 @@ After the demos and the human-centered question, this is the practical structure
   <div>
     <p class="stage-label">Interactive features</p>
     <ul>
-      <li><strong>Voice feature</strong>: Engage in conversational learning.</li>
-      <li><strong>Customize learning path</strong>: Adapt the materials based on individual progress.</li>
+      <li><strong>Voice Interaction</strong>: Ask questions via voice and receive highly precise answers with timestamps.</li>
+      <li><strong>Text Mode (Custom Learning Paths)</strong>: Dynamically extract the most necessary content for you. No need to finish entire Python, Data Mining, or Web Dev courses before building!</li>
+      <li><strong>Dynamic & Adaptive</strong>: Change your learning path anytime based on your evolving interests and preferred tools.</li>
     </ul>
+    <div style="margin-top: 1.5rem; font-size: 0.85em;">
+      <p>🚀 <strong>Test link</strong>: <a href="https://www.lbsocial.net/lbsocial-ai" target="_blank">lbsocial.net/lbsocial-ai</a></p>
+      <p>💻 <strong>GitHub</strong>: <a href="https://github.com/lbsocial/lbsocial-ai-public" target="_blank">lbsocial-ai-public</a></p>
+    </div>
   </div>
   <figure class="screenshot-card zoomable">
     <img src="images/study-mode-gif.gif" alt="Study Mode animation">
@@ -396,7 +401,9 @@ After the demos and the human-centered question, this is the practical structure
 </div>
 
 Note:
-Study Mode is for students. It should help them work with trusted course material, not bypass the learning process. The design goal is grounded support that encourages students to read, ask better questions, and explain their reasoning.
+In Study Mode, students can ask questions via voice and receive highly precise answers, complete with timestamps pointing to the exact material. 
+
+Furthermore, in text mode, students can fully customize their learning paths. Because technology evolves so quickly today, you no longer need to complete an entire Python, Data Mining, or Web Development course before you start building. Instead, you can simply tell the system what you want to accomplish. It will dynamically customize a learning path for you, extracting the most critical content you need right now so you can learn by doing. This learning path is highly flexible and can be adjusted at any time based on your evolving interests or the specific tools you want to use. (All generated content is provided in English).
 
 ---
 
