@@ -507,10 +507,8 @@ This is the most important part for me. AI may become very powerful, but it is s
   <div class="final-points" style="text-align: left; margin-bottom: 2rem;">
     <p style="margin-bottom: 0.8rem;"><strong>Companies train AI models.</strong><br>
     Foundation models are shaped by private companies, commercial incentives, and product-level guardrails.</p>
-
     <p style="margin-bottom: 0.8rem;"><strong>Education builds brain muscle.</strong><br>
     Students need the process: question framing, evidence evaluation, mistakes, reflection, and disciplinary judgment.</p>
-
     <p><strong>AI should not become a shortcut.</strong><br>
     It should extend human capacity while keeping humans responsible for purpose, standards, values, and consequences.</p>
   </div>
