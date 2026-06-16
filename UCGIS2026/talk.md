@@ -501,14 +501,19 @@ This is the most important part for me. AI may become very powerful, but it is s
 
 ---
 
-## What This Means for GIScience and GeoAI
+## Companies Train AI. Universities Train People.
 
 <div class="final-message">
-  <ol class="final-points">
-    <li><strong>Extend human capacity.</strong> Use AI to reduce repetitive work and make complex teaching and research workflows more feasible.</li>
-    <li><strong>Build brain muscle.</strong> Students still need critical thinking, question framing, evidence evaluation, and disciplinary judgment.</li>
-    <li><strong>Decide what matters.</strong> AI can expand what we can do; humans must decide the purpose, standards, and consequences.</li>
-  </ol>
+  <div class="final-points" style="text-align: left; margin-bottom: 2rem;">
+    <p style="margin-bottom: 0.8rem;"><strong>Companies train AI models.</strong><br>
+    Foundation models are shaped by private companies, commercial incentives, and product-level guardrails.</p>
+
+    <p style="margin-bottom: 0.8rem;"><strong>Education builds brain muscle.</strong><br>
+    Students need the process: question framing, evidence evaluation, mistakes, reflection, and disciplinary judgment.</p>
+
+    <p><strong>AI should not become a shortcut.</strong><br>
+    It should extend human capacity while keeping humans responsible for purpose, standards, values, and consequences.</p>
+  </div>
   <div class="final-contact">
     <p class="name">Xuebin Wei</p>
     <p>James Madison University</p>
@@ -518,4 +523,4 @@ This is the most important part for me. AI may become very powerful, but it is s
 </div>
 
 Note:
-My final suggestion is practical. Use AI to extend human capacity and reduce repetitive work. But this does not mean students should think less. They need to build critical thinking, question framing, evidence evaluation, and disciplinary judgment. AI can expand what we can do, but humans must decide what matters.
+Companies train AI models, driven by commercial incentives and product-level guardrails. But universities train people. Education builds brain muscle. Students absolutely need the process: question framing, evidence evaluation, making mistakes, reflection, and exercising disciplinary judgment. AI should not become a shortcut. It should extend human capacity while keeping humans responsible for the purpose, standards, values, and consequences.
